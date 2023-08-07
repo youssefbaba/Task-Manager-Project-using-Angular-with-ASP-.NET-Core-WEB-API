@@ -1,0 +1,269 @@
+<!-- Heading Starts -->
+<div class="d-flex align-items-center">
+    <h1 class="me-3">Task Statuses</h1>
+    <div class="spinner-border text-primary" role="status" *ngIf="showLoading">
+        <span class="visually-hidden"></span>
+    </div>
+</div>
+<!-- Heading Ends -->
+
+<div class="row">
+
+    <!-- Create Box and Search Box Starts -->
+    <div class="form-group row">
+
+        <div class="col-md-12 col-lg-12 col-xl-3 mb-2">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newTaskStatusModal"
+                (click)="onNewClick()">
+                Create Task Status
+            </button>
+        </div>
+
+        <label for="drpSearchBy" class="col-form-label col-md-6 col-lg-2 col-xl-2 text-right">
+            Search by:
+        </label>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 mb-md-2 mb-lg-0">
+            <select class="form-control" id="drpSearchBy" name="SearchBy" [(ngModel)]="searchBy">
+                <option value="taskStatusID">Task Status ID</option>
+                <option value="taskStatusName">Task Status Name</option>
+            </select>
+        </div>
+
+        <label for="textSearchText" class="col-form-label col-md-6 col-lg-2 col-xl-1 text-right">Search:</label>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 mb-2 mb-xl-0">
+            <div class="input-group">
+                <input type="text" class="form-control" id="txtSearchText" name="SearchText" [(ngModel)]="searchText"
+                    (keyup)="onSearchTeaxtKeyup()">
+            </div>
+        </div>
+
+    </div>
+    <!-- Create Box and Search Box Ends -->
+
+    <!-- Grid Box Starts -->
+    <div class="row">
+        <div class="col-xl-8 col-lg-9 mx-auto">
+            <table class="table table-borderless">
+                <thead class="table-light">
+                    <tr>
+                        <th>
+                            <a href="#" class="text-decoration-none" onclick="return false"
+                                (click)="onChangeSortingOrder('taskStatusID')">
+                                <span class="me-2">#</span>
+                                <i class="fa-solid" *ngIf="sortBy == 'taskStatusID'"
+                                    [ngClass]="(sortOrder == 'ASC') ? 'fa-sort-up' : 'fa-sort-down'"></i>
+                            </a> 
+                        </th>
+                        <th>
+                            <a href="#" class="text-decoration-none" onclick="return false"
+                                (click)="onChangeSortingOrder('taskStatusName')">
+                                <span class="me-2">Task Status Name</span>
+                                <i class="fa-solid" *ngIf="sortBy == 'taskStatusName'"
+                                    [ngClass]="(sortOrder == 'ASC') ? 'fa-sort-up' : 'fa-sort-down'"></i>
+                            </a>
+                        </th>
+                        <th class="text-center" style="width:200px">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let taskStatus of taskStatuses | sort : sortBy : sortOrder | filter: searchBy : searchText | paging : currentPageIndex : pageSize; let i = index">
+                        <td>{{taskStatus.taskStatusID}}</td>
+                        <td>{{taskStatus.taskStatusName}}</td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-info text-white me-2" data-bs-toggle="modal"
+                                data-bs-target="#editTaskStatusModal" (click)="onEditClick(taskStatus.taskStatusID)">
+                                Edit
+                            </button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#deleteTaskStatusModal"
+                                (click)="onDeleteClick(taskStatus.taskStatusID)">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Grid Box Ends -->
+
+    <!-- Paging Box Starts -->
+    <div class="col-12">
+        <ul class="pagination justify-content-center mt-1">
+            <li class="page-item" (click)="onPreviousPageClick()" [attr.disabled]="currentPageIndex === 0">
+                <a class="page-link bg-secondary text-white" href="#" onclick="return false">Previous</a>
+            </li>
+
+            <ng-container *ngIf="pages.length <= 10">
+                <li class="page-item" *ngFor="let page of pages; let i = index"
+                    [ngClass]="{ 'active': currentPageIndex == i}" (click)="onCurrentPageClick(i)">
+                    <a class="page-link" href="#" onclick="return false">{{i + 1}}</a>
+                </li>
+            </ng-container>
+
+            <ng-container *ngIf="pages.length > 10">
+                <li class="page-item" [ngClass]="{ 'active': currentPageIndex == 0}" (click)="onCurrentPageClick(0)">
+                    <a class="page-link" href="#" onclick="return false">1</a>
+                </li>
+
+                <li class="page-item" [ngClass]="{ 'active': currentPageIndex == 1}" (click)="onCurrentPageClick(1)">
+                    <a class="page-link" href="#" onclick="return false">2</a>
+                </li>
+
+                <li *ngIf="currentPageIndex > 1 && currentPageIndex < pages.length - 2">&nbsp;...&nbsp;</li>
+
+                <li class="page-item" [ngClass]=" 'active' " (click)="onCurrentPageClick(currentPageIndex)"
+                    *ngIf="currentPageIndex > 1 && currentPageIndex < pages.length - 2">
+                    <a class="page-link" href="#" onclick="return false">{{currentPageIndex + 1}}</a>
+                </li>
+
+                <li>&nbsp;...&nbsp;</li>
+
+                <li class="page-item" [ngClass]="{ 'active': currentPageIndex == pages.length - 2}"
+                    (click)="onCurrentPageClick(pages.length - 2)">
+                    <a class="page-link" href="#" onclick="return false">{{pages.length - 1}}</a>
+                </li>
+
+                <li class="page-item" [ngClass]="{ 'active': currentPageIndex == pages.length - 1}"
+                    (click)="onCurrentPageClick(pages.length - 1)">
+                    <a class="page-link" href="#" onclick="return false">{{pages.length}}</a>
+                </li>
+            </ng-container>
+
+            <li class="page-item" (click)="onNextPageClick()" [attr.disabled]="currentPageIndex === (pages.length - 1)">
+                <a class="page-link bg-secondary text-white" href="#" onclick="return false">Next</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Paging Box Ends -->
+
+</div>
+
+
+<!-- New Modal Starts -->
+<div class="modal fade" id="newTaskStatusModal" tabindex="-1" aria-labelledby="newTaskStatusModalLabel"
+    aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" (shown.bs.modal)="onModalInsertShown()"
+    (hidden.bs.modal)="onModalInsertHidden()">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h1 class="modal-title fs-5" id="newTaskStatusModalLabel">New Task Status</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form novalidate="novalidate" [formGroup]="newForm" (ngSubmit)="onSubmitSave()">
+                <div class="modal-body">
+                    <div class="row">
+                        <label for="txtNewTaskStatusName" class="col-sm-5 col-form-label">Task Status Name</label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtNewTaskStatusName" class="form-control"
+                                placeholder="Task Status Name" name="taskStatusName" formControlName="taskStatusName"
+                                maxlength="30" #defaultTextBoxNew
+                                [ngClass]="{ 'is-invalid': newForm.get('taskStatusName')?.invalid && (newForm.get('taskStatusName')?.dirty || newForm.get('taskStatusName')?.touched || newForm.submitted),
+                                'is-valid': newForm.get('taskStatusName')?.valid && (newForm.get('taskStatusName')?.dirty || newForm.get('taskStatusName')?.touched || newForm.submitted) }">
+
+                            <div class="text-danger"
+                                *ngIf="newForm.get('taskStatusName')?.invalid && (newForm.get('taskStatusName')?.dirty || newForm.get('taskStatusName')?.touched || newForm.submitted) && newForm.get('taskStatusName')?.errors?.['required']">
+                                Task Status Name can't be blank
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        id="newTaskStatusFormCancel">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- New Modal Ends -->
+
+<!-- Edit Modal Starts -->
+<div class="modal fade" id="editTaskStatusModal" tabindex="-1" aria-labelledby="editTaskStatusModalLabel"
+    aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" (shown.bs.modal)="onModalEditShown()"
+    (hidden.bs.modal)="onModalEditHidden()">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h1 class="modal-title fs-5" id="editTaskStatusModalLabel">Edit Task Status</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form novalidate="novalidate" [formGroup]="editForm" (ngSubmit)="onSubmitUpdate()" class="editForm">
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <label for="txtEditTaskStatusID" class="col-sm-5 col-form-label">Task Status ID</label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtEditTaskStatusID" class="form-control readonlyField"
+                                name="taskStatusID" formControlName="taskStatusID" readonly>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="txtEditTaskStatusName" class="col-sm-5 col-form-label">Task Status Name
+                        </label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtEditTaskStatusName" class="form-control"
+                                placeholder="Task Status Name" name="taskStatusName" formControlName="taskStatusName"
+                                maxlength="30" #defaultTextBoxEdit
+                                [ngClass]="{ 'is-invalid': editForm.get('taskStatusName')?.invalid && (editForm.get('taskStatusName')?.dirty || editForm.get('taskStatusName')?.touched || editForm.submitted),
+                                'is-valid': editForm.get('taskStatusName')?.valid && (editForm.get('taskStatusName')?.dirty || editForm.get('taskStatusName')?.touched || editForm.submitted) }">
+
+                            <div class="text-danger"
+                                *ngIf="editForm.get('taskStatusName')?.invalid && (editForm.get('taskStatusName')?.dirty || editForm.get('taskStatusName')?.touched || editForm.submitted) && editForm.get('taskStatusName')?.errors?.['required']">
+                                Task Status Name can't be blank
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        id="editTaskStatusFormCancel">Close</button>
+                    <button type="submit" class="btn btn-info text-white">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Edit Modal Ends -->
+
+<!-- Delete Modal Starts -->
+<div class="modal fade" id="deleteTaskStatusModal" tabindex="-1" aria-labelledby="deleteTaskStatusModalLabel"
+    aria-hidden="true" (hidden.bs.modal)="onModalDeleteHidden()">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h1 class="modal-title fs-5" id="deleteTaskStatusModalLabel">Delete Task Status</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form [formGroup]="deleteForm" class="deleteForm">
+                <div class="modal-body">
+                    <h5 class="text-danger">Are you sure you want to delete this Task Status?</h5>
+                    <div class="row mb-3">
+                        <label for="txtDeleteTaskStatusID" class="col-sm-5 col-form-label">Task Status
+                            ID</label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtDeleteTaskStatusID" class="form-control readonlyField"
+                                name="taskStatusID" formControlName="taskStatusID" readonly>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="txtDeleteTaskStatusName" class="col-sm-5 col-form-label">Task Status
+                            Name</label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtDeleteTaskStatusName" class="form-control readonlyField"
+                                name="taskStatusName" formControlName="taskStatusName" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        id="deleteTaskStatusFormCancel">Close</button>
+                    <button type="button" class="btn btn-danger" (click)="onDeleteConfirmClick()">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Delete Modal Ends -->

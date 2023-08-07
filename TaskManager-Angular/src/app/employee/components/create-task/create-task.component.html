@@ -1,0 +1,106 @@
+<h1>Create Task</h1>
+<form [formGroup]="newTaskForm" novalidate="novalidate" (ngSubmit)="onSubmitTask()">
+    <div class="row">
+
+        <div class="col-12">
+            <div class="form-group">
+                <label for="taskTitle" class="text-info" style="font-size:18px">Task Title:</label>
+                <input type="text" class="form-control" id="taskTitle" placeholder="Task Title"
+                    formControlName="taskTitle" style="font-size:20px" autofocus="autofocus"
+                    [ngClass]="{ 'is-invalid': newTaskForm.get('taskTitle')?.invalid && (newTaskForm.get('taskTitle')?.dirty || newTaskForm.get('taskTitle')?.touched || newTaskForm.submitted),
+                    'is-valid': newTaskForm.get('taskTitle')?.valid && (newTaskForm.get('taskTitle')?.dirty || newTaskForm.get('taskTitle')?.touched || newTaskForm.submitted) }">
+
+                <div class="text-danger"
+                    *ngIf="newTaskForm.get('taskTitle')?.invalid && (newTaskForm.get('taskTitle')?.dirty || newTaskForm.get('taskTitle')?.touched || newTaskForm.submitted) && newTaskForm.get('taskTitle')?.errors?.['required']">
+                    Task Title can't be blank
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-group">
+                <label for="description" class="text-info">Description:</label>
+                <textarea class="form-control" id="description" placeholder="Description" formControlName="description">
+                </textarea>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group form-row">
+                <label for="projectID" class="text-info col-md-3 col-form-label">Project:</label>
+                <div class="col-md-9">
+                    <select class="form-control" id="projectID" formControlName="projectID"
+                        [ngClass]="{ 'is-invalid': newTaskForm.get('projectID')?.invalid && (newTaskForm.get('projectID')?.dirty || newTaskForm.get('projectID')?.touched || newTaskForm.submitted),
+                    'is-valid': newTaskForm.get('projectID')?.valid && (newTaskForm.get('projectID')?.dirty || newTaskForm.get('projectID')?.touched || newTaskForm.submitted) }">
+                        <option value="null" disabled>Please Select</option>
+                        <option *ngFor="let project of projects | async" [value]="project.projectID">
+                            {{project.projectName}}
+                        </option>
+                    </select>
+
+                    <div class="text-danger"
+                        *ngIf="newTaskForm.get('projectID')?.invalid && (newTaskForm.get('projectID')?.dirty || newTaskForm.get('projectID')?.touched || newTaskForm.submitted) && newTaskForm.get('projectID')?.errors?.['required']">
+                        Please select project, to which the task belongs to.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group form-row">
+                <label for="assignedTo" class="text-info col-md-3 col-form-label">Assigned To:</label>
+                <div class="col-md-9">
+                    <select class="form-control" id="assignedTo" formControlName="assignedTo"
+                        [ngClass]="{ 'is-invalid': newTaskForm.get('assignedTo')?.invalid && (newTaskForm.get('assignedTo')?.dirty || newTaskForm.get('assignedTo')?.touched || newTaskForm.submitted),
+                    'is-valid': newTaskForm.get('assignedTo')?.valid && (newTaskForm.get('assignedTo')?.dirty || newTaskForm.get('assignedTo')?.touched || newTaskForm.submitted) }">
+                        <option value="null" disabled>Please Select</option>
+                        <option [value]="employee.id" *ngFor="let employee of employees | async">
+                            {{employee.userName}}
+                        </option>
+                    </select>
+
+                    <div class="text-danger"
+                        *ngIf="newTaskForm.get('assignedTo')?.invalid && (newTaskForm.get('assignedTo')?.dirty || newTaskForm.get('assignedTo')?.touched || newTaskForm.submitted) && newTaskForm.get('assignedTo')?.errors?.['required']">
+                        Please select the employee, to whom the task id assigned.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-group form-row">
+                <label for="taskPriorityID" class="text-info col-md-3 col-form-label">Priority:</label>
+                <div class="col-md-9">
+                    <select class="form-control" id="taskPriorityID" formControlName="taskPriorityID"
+                        [ngClass]="{ 'is-invalid': newTaskForm.get('taskPriorityID')?.invalid && (newTaskForm.get('taskPriorityID')?.dirty || newTaskForm.get('taskPriorityID')?.touched || newTaskForm.submitted),
+                    'is-valid': newTaskForm.get('taskPriorityID')?.valid && (newTaskForm.get('taskPriorityID')?.dirty || newTaskForm.get('taskPriorityID')?.touched || newTaskForm.submitted) }">
+                        <option value="null" disabled>Please Select</option>
+                        <option [value]="taskPriority.taskPriorityID"
+                            *ngFor="let taskPriority of taskPriorities | async">
+                            {{taskPriority.taskPriorityName}}
+                        </option>
+                    </select>
+
+                    <span class="text-danger"
+                        *ngIf="newTaskForm.get('taskPriorityID')?.invalid && (newTaskForm.get('taskPriorityID')?.dirty || newTaskForm.get('taskPriorityID')?.touched || newTaskForm.submitted) && newTaskForm.get('taskPriorityID')?.errors?.['required']">
+                        Please select the priority of the task.</span>
+                </div>
+            </div>
+
+            <div class="form-group form-row">
+                <label for="currentStatus" class="text-info col-md-3 col-form-label">Status:</label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control-plaintext readonlyField" id="currentStatus"
+                        formControlName="currentStatus" readonly>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-12 border-top text-center">
+            <div>
+                <button class="btn btn-success btn-lg mt-2" type="submit" >Create Task</button>
+            </div>
+            <a class="btn btn-info text-white btn-sm mt-1" [routerLink]=" [ '/employee', 'tasks' ] ">Back to Tasks</a>
+        </div>
+
+    </div>
+</form>

@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "projectName": "Lotstring",
+      "dateOfStart": "2021-10-12",
+      "teamSize": 11
+    },
+    {
+      "id": 2,
+      "projectName": "Andalax",
+      "dateOfStart": "1/11/2021",
+      "teamSize": 21
+    },
+    {
+      "id": 3,
+      "projectName": "Andalax",
+      "dateOfStart": "11/27/2020",
+      "teamSize": 13
+    },
+    {
+      "id": 4,
+      "projectName": "Overhold",
+      "dateOfStart": "12/11/2021",
+      "teamSize": 9
+    }
+  ]
+}

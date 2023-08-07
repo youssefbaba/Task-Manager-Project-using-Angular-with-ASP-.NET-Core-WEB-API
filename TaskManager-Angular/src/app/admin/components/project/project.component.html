@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <div>
+            <div>#{{project.projectID}}</div>
+            <h5>{{project.projectName}}</h5>
+        </div>
+        <div>
+            <ng-content></ng-content>
+        </div>
+    </div>
+    <div class="card-body" [hidden]="hideDetails">
+        <table class="table table-borderless" #dataTable>
+            <tbody>
+                <tr>
+                    <th>Date Of Start</th>
+                    <td>{{project.dateOfStart}}</td>
+                </tr>
+                <tr>
+                    <th>Team Size</th>
+                    <td>
+                        <span>{{project.teamSize}} </span>
+                        <span class="text-info">{{project.teamSize | numberToWords : ' and '}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Client Location</th>
+                    <td>{{project.clientLocation.clientLocationName}}</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>{{project.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer">
+        <!--  projects/view/1  -->
+        <a class="btn btn-info text-white me-2" [routerLink]="['/admin','projects', 'view', project.projectID]" >
+            Details
+        </a>
+        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModalEdit"
+            (click)="onEditClick()">
+            Edit
+        </button>
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModalDelete"
+            (click)="onDeleteClick()">
+            Delete
+        </button>
+    </div>
+</div>

@@ -1,0 +1,1331 @@
+﻿2023-07-31 21:54:08.834 +01:00 [Information] User profile is available. Using '"C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 21:54:10.876 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 21:54:11.852 +01:00 [Information] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2023-07-31 21:54:11.936 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 21:54:12.271 +01:00 [Information] Executed DbCommand ("58"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 21:54:12.392 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 21:54:12.777 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 21:54:13.364 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 21:54:13.407 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 21:54:13.420 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.1698ms.
+2023-07-31 21:54:13.477 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 21:54:13.724 +01:00 [Information] Executed ViewResult - view "Index" executed in 275.8319ms.
+2023-07-31 21:54:13.725 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 356.9789ms
+2023-07-31 21:54:13.759 +01:00 [Information] Request finished in 982.5345ms 200 text/html; charset=utf-8
+2023-07-31 21:54:14.222 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 21:54:14.222 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 21:54:14.222 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 21:54:14.233 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 21:54:14.235 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 21:54:14.297 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 21:54:14.303 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 21:54:14.329 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 21:54:14.329 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 21:54:14.344 +01:00 [Information] Request finished in 121.6019ms 200 application/javascript
+2023-07-31 21:54:14.344 +01:00 [Information] Request finished in 121.6018ms 200 application/javascript
+2023-07-31 21:54:14.344 +01:00 [Information] Request finished in 121.6018ms 200 application/javascript
+2023-07-31 21:54:14.353 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 21:54:14.353 +01:00 [Information] Request finished in 119.5335ms 200 text/css
+2023-07-31 21:54:14.357 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 21:54:14.357 +01:00 [Information] Request finished in 121.9367ms 200 application/javascript
+2023-07-31 21:54:14.541 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 21:54:14.541 +01:00 [Information] Request finished in 243.6684ms 200 application/javascript
+2023-07-31 21:54:17.289 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/routerlogger text/plain 47
+2023-07-31 21:54:17.328 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 21:54:17.404 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 21:54:17.716 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Index (MvcTaskManger)" in 387.4083ms
+2023-07-31 21:54:17.716 +01:00 [Information] Request finished in 427.3736ms 400 application/json; charset=utf-8
+2023-07-31 21:54:17.755 +01:00 [Information] Connection id ""0HMSI115MM30N"", Request id ""0HMSI115MM30N:00000002"": the application completed without reading the entire request body.
+2023-07-31 21:54:22.597 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js.map  
+2023-07-31 21:54:22.665 +01:00 [Information] Sending file. Request path: '"/vendor.js.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js.map"'
+2023-07-31 21:54:22.665 +01:00 [Information] Request finished in 68.5519ms 200 text/plain
+2023-07-31 21:54:23.048 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css.map  
+2023-07-31 21:54:23.065 +01:00 [Information] Sending file. Request path: '"/styles.css.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css.map"'
+2023-07-31 21:54:23.065 +01:00 [Information] Request finished in 17.2779ms 200 text/plain
+2023-07-31 21:54:30.214 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/account/authenticate application/json 51
+2023-07-31 21:54:30.247 +01:00 [Information] Route matched with "{action = \"Authenticate\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[MvcTaskManger.Identity.ApplicationUser]] Authenticate(MvcTaskManger.ViewModels.LoginViewModel)" on controller "MvcTaskManger.Controllers.AccountController" ("MvcTaskManger").
+2023-07-31 21:54:30.422 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" - Validation state: Valid
+2023-07-31 21:54:30.464 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 21:54:30.549 +01:00 [Information] Executed DbCommand ("29"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2023-07-31 21:54:30.922 +01:00 [Information] Executed DbCommand ("14"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2023-07-31 21:54:31.055 +01:00 [Information] Executed DbCommand ("18"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2023-07-31 21:54:31.070 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 21:54:31.114 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2023-07-31 21:54:31.182 +01:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2023-07-31 21:54:31.226 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2023-07-31 21:54:31.269 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2023-07-31 21:54:31.314 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2023-07-31 21:54:31.813 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1390.8936ms.
+2023-07-31 21:54:31.820 +01:00 [Information] Executing ObjectResult, writing value of type '"MvcTaskManger.Identity.ApplicationUser"'.
+2023-07-31 21:54:31.863 +01:00 [Information] Executed action "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" in 1614.1685ms
+2023-07-31 21:54:31.866 +01:00 [Information] Request finished in 1652.5604ms 200 application/json; charset=utf-8
+2023-07-31 21:54:32.086 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/user.png  
+2023-07-31 21:54:32.086 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/routerlogger text/plain 68
+2023-07-31 21:54:32.087 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 21:54:32.087 +01:00 [Information] Sending file. Request path: '"/assets/user.png"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\user.png"'
+2023-07-31 21:54:32.088 +01:00 [Information] Request finished in 2.0091ms 200 image/png
+2023-07-31 21:54:32.088 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 21:54:32.088 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Index (MvcTaskManger)" in 1.0561ms
+2023-07-31 21:54:32.089 +01:00 [Information] Request finished in 2.3679ms 400 application/json; charset=utf-8
+2023-07-31 21:54:32.089 +01:00 [Information] Connection id ""0HMSI115MM30R"", Request id ""0HMSI115MM30R:00000002"": the application completed without reading the entire request body.
+2023-07-31 21:54:32.374 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/fa-solid-900.woff2  
+2023-07-31 21:54:32.377 +01:00 [Information] Sending file. Request path: '"/fa-solid-900.woff2"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\fa-solid-900.woff2"'
+2023-07-31 21:54:32.382 +01:00 [Information] Request finished in 3.9165ms 200 font/woff2
+2023-07-31 22:12:46.508 +01:00 [Information] User profile is available. Using '"C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:12:50.455 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:12:51.602 +01:00 [Information] Executed DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2023-07-31 22:12:51.685 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:12:52.066 +01:00 [Information] Executed DbCommand ("98"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:12:52.337 +01:00 [Information] Executed DbCommand ("20"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:12:53.427 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 22:12:53.427 +01:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:53046/  0
+2023-07-31 22:12:53.605 +01:00 [Information] Request finished in 181.5867ms 200 
+2023-07-31 22:12:54.782 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 22:12:54.843 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:12:54.865 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3.8509ms.
+2023-07-31 22:12:54.940 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 22:12:55.149 +01:00 [Information] Executed ViewResult - view "Index" executed in 242.4272ms.
+2023-07-31 22:12:55.152 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 367.4018ms
+2023-07-31 22:12:55.211 +01:00 [Information] Request finished in 1789.1691ms 200 text/html; charset=utf-8
+2023-07-31 22:12:55.553 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 22:12:55.554 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 22:12:55.556 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 22:12:55.565 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 22:12:55.569 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 22:12:55.714 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 22:12:55.722 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 22:12:55.729 +01:00 [Information] Request finished in 160.2772ms 200 application/javascript
+2023-07-31 22:12:55.856 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 22:12:55.856 +01:00 [Information] Request finished in 301.9926ms 200 application/javascript
+2023-07-31 22:12:55.931 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 22:12:55.932 +01:00 [Information] Request finished in 366.4102ms 200 text/css
+2023-07-31 22:12:56.093 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 22:12:56.093 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 22:12:56.094 +01:00 [Information] Request finished in 371.8205ms 200 application/javascript
+2023-07-31 22:12:56.094 +01:00 [Information] Request finished in 541.2022ms 200 application/javascript
+2023-07-31 22:12:56.476 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 22:12:56.478 +01:00 [Information] Request finished in 921.7508ms 200 application/javascript
+2023-07-31 22:12:58.189 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 48
+2023-07-31 22:12:58.235 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:12:58.312 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:12:58.655 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 419.2511ms
+2023-07-31 22:12:58.655 +01:00 [Information] Request finished in 466.6755ms 400 application/json; charset=utf-8
+2023-07-31 22:12:58.708 +01:00 [Information] Connection id ""0HMSI1BJIUK16"", Request id ""0HMSI1BJIUK16:00000003"": the application completed without reading the entire request body.
+2023-07-31 22:13:05.411 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/account/authenticate application/json 51
+2023-07-31 22:13:05.476 +01:00 [Information] Route matched with "{action = \"Authenticate\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[MvcTaskManger.Identity.ApplicationUser]] Authenticate(MvcTaskManger.ViewModels.LoginViewModel)" on controller "MvcTaskManger.Controllers.AccountController" ("MvcTaskManger").
+2023-07-31 22:13:05.669 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:13:05.701 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:13:05.771 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2023-07-31 22:13:06.362 +01:00 [Information] Executed DbCommand ("15"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2023-07-31 22:13:06.643 +01:00 [Information] Executed DbCommand ("48"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2023-07-31 22:13:06.676 +01:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:13:06.746 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2023-07-31 22:13:06.854 +01:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2023-07-31 22:13:06.909 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2023-07-31 22:13:06.954 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2023-07-31 22:13:07.027 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2023-07-31 22:13:07.905 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2235.406ms.
+2023-07-31 22:13:07.926 +01:00 [Information] Executing ObjectResult, writing value of type '"MvcTaskManger.Identity.ApplicationUser"'.
+2023-07-31 22:13:08.045 +01:00 [Information] Executed action "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" in 2567.9955ms
+2023-07-31 22:13:08.058 +01:00 [Information] Request finished in 2647.0384ms 200 application/json; charset=utf-8
+2023-07-31 22:13:08.462 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/user.png  
+2023-07-31 22:13:08.466 +01:00 [Information] Sending file. Request path: '"/assets/user.png"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\user.png"'
+2023-07-31 22:13:08.470 +01:00 [Information] Request finished in 8.0225ms 200 image/png
+2023-07-31 22:13:08.597 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 69
+2023-07-31 22:13:08.598 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:13:08.600 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:13:08.610 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 2.1434ms
+2023-07-31 22:13:08.610 +01:00 [Information] Request finished in 12.8721ms 400 application/json; charset=utf-8
+2023-07-31 22:13:08.611 +01:00 [Information] Connection id ""0HMSI1BJIUK17"", Request id ""0HMSI1BJIUK17:00000002"": the application completed without reading the entire request body.
+2023-07-31 22:13:09.399 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/fa-solid-900.woff2  
+2023-07-31 22:13:09.411 +01:00 [Information] Sending file. Request path: '"/fa-solid-900.woff2"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\fa-solid-900.woff2"'
+2023-07-31 22:13:09.412 +01:00 [Information] Request finished in 12.6547ms 200 font/woff2
+2023-07-31 22:13:11.356 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js.map  
+2023-07-31 22:13:12.244 +01:00 [Information] Sending file. Request path: '"/vendor.js.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js.map"'
+2023-07-31 22:13:12.244 +01:00 [Information] Request finished in 887.9382ms 200 text/plain
+2023-07-31 22:13:12.628 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css.map  
+2023-07-31 22:13:12.727 +01:00 [Information] Sending file. Request path: '"/styles.css.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css.map"'
+2023-07-31 22:13:12.728 +01:00 [Information] Request finished in 99.4483ms 200 text/plain
+2023-07-31 22:15:03.104 +01:00 [Information] User profile is available. Using '"C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:15:06.350 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:15:07.488 +01:00 [Information] Executed DbCommand ("57"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2023-07-31 22:15:07.583 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:15:07.963 +01:00 [Information] Executed DbCommand ("52"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:15:08.159 +01:00 [Information] Executed DbCommand ("18"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:15:09.017 +01:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:53046/  0
+2023-07-31 22:15:09.017 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 22:15:09.124 +01:00 [Information] Request finished in 104.9553ms 200 
+2023-07-31 22:15:10.167 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 22:15:10.219 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:15:10.240 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.2076ms.
+2023-07-31 22:15:10.317 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 22:15:10.567 +01:00 [Information] Executed ViewResult - view "Index" executed in 295.8013ms.
+2023-07-31 22:15:10.569 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 400.3527ms
+2023-07-31 22:15:10.642 +01:00 [Information] Request finished in 1629.4799ms 200 text/html; charset=utf-8
+2023-07-31 22:15:10.801 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 22:15:10.865 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 22:15:10.868 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 22:15:10.868 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 22:15:10.870 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 22:15:10.969 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 22:15:10.996 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 22:15:11.010 +01:00 [Information] Request finished in 142.2601ms 200 application/javascript
+2023-07-31 22:15:11.103 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 22:15:11.108 +01:00 [Information] Request finished in 243.0184ms 200 application/javascript
+2023-07-31 22:15:11.124 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 22:15:11.124 +01:00 [Information] Request finished in 256.1029ms 200 application/javascript
+2023-07-31 22:15:11.138 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 22:15:11.138 +01:00 [Information] Request finished in 268.5294ms 200 application/javascript
+2023-07-31 22:15:11.145 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 22:15:11.148 +01:00 [Information] Request finished in 346.7339ms 200 text/css
+2023-07-31 22:15:11.388 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 22:15:11.390 +01:00 [Information] Request finished in 419.2957ms 200 application/javascript
+2023-07-31 22:15:13.082 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 48
+2023-07-31 22:15:13.237 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:15:13.321 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:19:22.115 +01:00 [Information] User profile is available. Using '"C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:19:25.198 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:19:26.236 +01:00 [Information] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2023-07-31 22:19:26.319 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:19:26.636 +01:00 [Information] Executed DbCommand ("81"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:19:26.800 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:19:27.670 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 22:19:27.670 +01:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:53046/  0
+2023-07-31 22:19:27.786 +01:00 [Information] Request finished in 118.4682ms 200 
+2023-07-31 22:19:28.770 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 22:19:28.828 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:19:28.844 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.8755ms.
+2023-07-31 22:19:28.920 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 22:19:29.153 +01:00 [Information] Executed ViewResult - view "Index" executed in 254.5971ms.
+2023-07-31 22:19:29.170 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 398.7694ms
+2023-07-31 22:19:29.215 +01:00 [Information] Request finished in 1548.2471ms 200 text/html; charset=utf-8
+2023-07-31 22:19:29.386 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 22:19:29.397 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 22:19:29.400 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 22:19:29.419 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 22:19:29.429 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 22:19:29.447 +01:00 [Information] The file "/vendor.js" was not modified
+2023-07-31 22:19:29.447 +01:00 [Information] The file "/styles.css" was not modified
+2023-07-31 22:19:29.447 +01:00 [Information] The file "/main.js" was not modified
+2023-07-31 22:19:29.447 +01:00 [Information] The file "/polyfills.js" was not modified
+2023-07-31 22:19:29.447 +01:00 [Information] The file "/runtime.js" was not modified
+2023-07-31 22:19:29.452 +01:00 [Information] Request finished in 52.55ms 304 application/javascript
+2023-07-31 22:19:29.452 +01:00 [Information] Request finished in 32.6191ms 304 application/javascript
+2023-07-31 22:19:29.452 +01:00 [Information] Request finished in 22.7275ms 304 application/javascript
+2023-07-31 22:19:29.452 +01:00 [Information] Request finished in 65.9427ms 304 text/css
+2023-07-31 22:19:29.452 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 22:19:29.453 +01:00 [Information] The file "/scripts.js" was not modified
+2023-07-31 22:19:29.454 +01:00 [Information] Request finished in 1.1653ms 304 application/javascript
+2023-07-31 22:19:29.452 +01:00 [Information] Request finished in 54.9007ms 304 application/javascript
+2023-07-31 22:19:30.555 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 48
+2023-07-31 22:19:30.562 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:19:30.563 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:19:30.650 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 86.9418ms.
+2023-07-31 22:19:30.658 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:19:30.659 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 96.5507ms
+2023-07-31 22:19:30.659 +01:00 [Information] Request finished in 104.4379ms 200 
+2023-07-31 22:19:34.858 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/account/authenticate application/json 51
+2023-07-31 22:19:34.948 +01:00 [Information] Route matched with "{action = \"Authenticate\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[MvcTaskManger.Identity.ApplicationUser]] Authenticate(MvcTaskManger.ViewModels.LoginViewModel)" on controller "MvcTaskManger.Controllers.AccountController" ("MvcTaskManger").
+2023-07-31 22:19:35.283 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:19:35.315 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:19:35.389 +01:00 [Information] Executed DbCommand ("34"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2023-07-31 22:19:35.872 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2023-07-31 22:19:36.041 +01:00 [Information] Executed DbCommand ("21"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2023-07-31 22:19:36.067 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:19:36.123 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2023-07-31 22:19:36.200 +01:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2023-07-31 22:19:36.250 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2023-07-31 22:19:36.307 +01:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2023-07-31 22:19:36.360 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2023-07-31 22:19:36.982 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1698.0208ms.
+2023-07-31 22:19:37.000 +01:00 [Information] Executing ObjectResult, writing value of type '"MvcTaskManger.Identity.ApplicationUser"'.
+2023-07-31 22:19:37.069 +01:00 [Information] Executed action "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" in 2119.9479ms
+2023-07-31 22:19:37.091 +01:00 [Information] Request finished in 2233.1107ms 200 application/json; charset=utf-8
+2023-07-31 22:19:37.231 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/user.png  
+2023-07-31 22:19:37.248 +01:00 [Information] Sending file. Request path: '"/assets/user.png"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\user.png"'
+2023-07-31 22:19:37.248 +01:00 [Information] Request finished in 17.244ms 200 image/png
+2023-07-31 22:19:37.251 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 69
+2023-07-31 22:19:37.252 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:19:37.252 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:19:37.284 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 31.2744ms.
+2023-07-31 22:19:37.284 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:19:37.284 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 32.2216ms
+2023-07-31 22:19:37.285 +01:00 [Information] Request finished in 33.6121ms 200 
+2023-07-31 22:19:38.085 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/fa-solid-900.woff2  
+2023-07-31 22:19:38.128 +01:00 [Information] Sending file. Request path: '"/fa-solid-900.woff2"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\fa-solid-900.woff2"'
+2023-07-31 22:19:38.129 +01:00 [Information] Request finished in 43.6309ms 200 font/woff2
+2023-07-31 22:19:50.559 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutOne.jpg  
+2023-07-31 22:19:50.560 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutThree.jpg  
+2023-07-31 22:19:50.563 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutTwo.jpg  
+2023-07-31 22:19:50.564 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutFour.jpg  
+2023-07-31 22:19:50.565 +01:00 [Information] Sending file. Request path: '"/assets/aboutOne.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutOne.jpg"'
+2023-07-31 22:19:50.574 +01:00 [Information] Sending file. Request path: '"/assets/aboutTwo.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutTwo.jpg"'
+2023-07-31 22:19:50.575 +01:00 [Information] Request finished in 11.5082ms 200 image/jpeg
+2023-07-31 22:19:50.575 +01:00 [Information] Request finished in 16.603ms 200 image/jpeg
+2023-07-31 22:19:50.575 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 59
+2023-07-31 22:19:50.576 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:19:50.597 +01:00 [Information] Sending file. Request path: '"/assets/aboutThree.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutThree.jpg"'
+2023-07-31 22:19:50.597 +01:00 [Information] Request finished in 37.0514ms 200 image/jpeg
+2023-07-31 22:19:50.593 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:19:56.880 +01:00 [Information] Sending file. Request path: '"/assets/aboutFour.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutFour.jpg"'
+2023-07-31 22:20:00.399 +01:00 [Information] Request finished in 9835.1191ms 200 image/jpeg
+2023-07-31 22:21:31.691 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 101089.0304ms.
+2023-07-31 22:21:31.691 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:21:31.691 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 101115.2911ms
+2023-07-31 22:21:31.692 +01:00 [Information] Request finished in 101116.3615ms 200 
+2023-07-31 22:25:40.777 +01:00 [Information] User profile is available. Using '"C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:25:43.790 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:25:44.997 +01:00 [Information] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2023-07-31 22:25:45.067 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:25:45.343 +01:00 [Information] Executed DbCommand ("44"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:25:45.523 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:25:46.473 +01:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:53046/  0
+2023-07-31 22:25:46.473 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 22:25:46.643 +01:00 [Information] Request finished in 173.1944ms 200 
+2023-07-31 22:25:47.731 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 22:25:47.800 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:25:47.819 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.1119ms.
+2023-07-31 22:25:47.926 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 22:25:48.161 +01:00 [Information] Executed ViewResult - view "Index" executed in 284.7389ms.
+2023-07-31 22:25:48.165 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 432.2616ms
+2023-07-31 22:25:48.188 +01:00 [Information] Request finished in 1719.7718ms 200 text/html; charset=utf-8
+2023-07-31 22:25:48.491 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 22:25:48.493 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 22:25:48.493 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 22:25:48.501 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 22:25:48.502 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 22:25:48.635 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 22:25:48.636 +01:00 [Information] Request finished in 144.7524ms 200 application/javascript
+2023-07-31 22:25:48.642 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 22:25:48.995 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 22:25:49.082 +01:00 [Information] Request finished in 589.743ms 200 application/javascript
+2023-07-31 22:25:49.086 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 22:25:49.087 +01:00 [Information] Request finished in 585.2668ms 200 application/javascript
+2023-07-31 22:25:49.118 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 22:25:49.118 +01:00 [Information] Request finished in 476.7158ms 200 text/css
+2023-07-31 22:25:49.170 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 22:25:49.172 +01:00 [Information] Request finished in 669.3339ms 200 application/javascript
+2023-07-31 22:25:49.476 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 22:25:49.476 +01:00 [Information] Request finished in 983.5835ms 200 application/javascript
+2023-07-31 22:25:51.530 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 48
+2023-07-31 22:25:51.657 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:25:51.897 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:25:52.328 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 670.9602ms
+2023-07-31 22:25:52.329 +01:00 [Information] Request finished in 798.5499ms 400 application/json; charset=utf-8
+2023-07-31 22:25:52.402 +01:00 [Information] Connection id ""0HMSI1IQ0D3J2"", Request id ""0HMSI1IQ0D3J2:00000002"": the application completed without reading the entire request body.
+2023-07-31 22:25:56.731 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js.map  
+2023-07-31 22:25:56.987 +01:00 [Information] Sending file. Request path: '"/vendor.js.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js.map"'
+2023-07-31 22:25:56.988 +01:00 [Information] Request finished in 257.2836ms 200 text/plain
+2023-07-31 22:25:57.215 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css.map  
+2023-07-31 22:25:57.287 +01:00 [Information] Sending file. Request path: '"/styles.css.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css.map"'
+2023-07-31 22:25:57.290 +01:00 [Information] Request finished in 73.528ms 200 text/plain
+2023-07-31 22:26:06.222 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutOne.jpg  
+2023-07-31 22:26:06.240 +01:00 [Information] Sending file. Request path: '"/assets/aboutOne.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutOne.jpg"'
+2023-07-31 22:26:06.240 +01:00 [Information] Request finished in 19.0282ms 200 image/jpeg
+2023-07-31 22:26:06.339 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutTwo.jpg  
+2023-07-31 22:26:06.341 +01:00 [Information] Sending file. Request path: '"/assets/aboutTwo.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutTwo.jpg"'
+2023-07-31 22:26:06.348 +01:00 [Information] Request finished in 8.2581ms 200 image/jpeg
+2023-07-31 22:26:06.351 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutFour.jpg  
+2023-07-31 22:26:06.353 +01:00 [Information] Sending file. Request path: '"/assets/aboutFour.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutFour.jpg"'
+2023-07-31 22:26:06.354 +01:00 [Information] Request finished in 3.6013ms 200 image/jpeg
+2023-07-31 22:26:06.354 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutThree.jpg  
+2023-07-31 22:26:06.425 +01:00 [Information] Sending file. Request path: '"/assets/aboutThree.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutThree.jpg"'
+2023-07-31 22:26:06.426 +01:00 [Information] Request finished in 71.2638ms 200 image/jpeg
+2023-07-31 22:26:06.552 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 53
+2023-07-31 22:26:06.553 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:26:06.555 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:26:06.556 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 2.472ms
+2023-07-31 22:26:06.556 +01:00 [Information] Request finished in 4.1915ms 400 application/json; charset=utf-8
+2023-07-31 22:26:06.558 +01:00 [Information] Connection id ""0HMSI1IQ0D3J1"", Request id ""0HMSI1IQ0D3J1:00000004"": the application completed without reading the entire request body.
+2023-07-31 22:28:08.675 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 53
+2023-07-31 22:28:08.676 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:28:08.677 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:28:08.677 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 0.6782ms
+2023-07-31 22:28:08.678 +01:00 [Information] Request finished in 2.6997ms 400 application/json; charset=utf-8
+2023-07-31 22:28:08.696 +01:00 [Information] Connection id ""0HMSI1IQ0D3J6"", Request id ""0HMSI1IQ0D3J6:00000001"": the application completed without reading the entire request body.
+2023-07-31 22:28:49.856 +01:00 [Information] User profile is available. Using '"C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:28:52.915 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:28:54.025 +01:00 [Information] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2023-07-31 22:28:54.118 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:28:54.424 +01:00 [Information] Executed DbCommand ("51"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:28:54.586 +01:00 [Information] Executed DbCommand ("20"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:28:55.522 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 22:28:55.522 +01:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:53046/  0
+2023-07-31 22:28:55.742 +01:00 [Information] Request finished in 231.8197ms 200 
+2023-07-31 22:28:59.132 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 22:28:59.190 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:28:59.211 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.3085ms.
+2023-07-31 22:28:59.302 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 22:28:59.595 +01:00 [Information] Executed ViewResult - view "Index" executed in 325.4744ms.
+2023-07-31 22:28:59.604 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 464.5865ms
+2023-07-31 22:28:59.728 +01:00 [Information] Request finished in 4219.3332ms 200 text/html; charset=utf-8
+2023-07-31 22:28:59.857 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 22:28:59.858 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 22:28:59.916 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 22:28:59.921 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 22:28:59.923 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 22:28:59.997 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 22:29:00.011 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 22:29:00.088 +01:00 [Information] Request finished in 231.7998ms 200 application/javascript
+2023-07-31 22:29:00.208 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 22:29:00.208 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 22:29:00.208 +01:00 [Information] Request finished in 292.3773ms 200 application/javascript
+2023-07-31 22:29:00.209 +01:00 [Information] Request finished in 287.4211ms 200 application/javascript
+2023-07-31 22:29:00.224 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 22:29:00.225 +01:00 [Information] Request finished in 213.2425ms 200 application/javascript
+2023-07-31 22:29:00.260 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 22:29:00.260 +01:00 [Information] Request finished in 402.1592ms 200 text/css
+2023-07-31 22:29:00.598 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 22:29:00.598 +01:00 [Information] Request finished in 675.5136ms 200 application/javascript
+2023-07-31 22:29:02.254 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger application/json 65
+2023-07-31 22:29:02.318 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:29:02.797 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:29:02.932 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 614.4694ms
+2023-07-31 22:29:02.933 +01:00 [Information] Request finished in 678.6649ms 400 application/json; charset=utf-8
+2023-07-31 22:29:09.155 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css.map  
+2023-07-31 22:29:09.178 +01:00 [Information] Sending file. Request path: '"/styles.css.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css.map"'
+2023-07-31 22:29:09.179 +01:00 [Information] Request finished in 24.1199ms 200 text/plain
+2023-07-31 22:29:12.218 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutOne.jpg  
+2023-07-31 22:29:12.257 +01:00 [Information] Sending file. Request path: '"/assets/aboutOne.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutOne.jpg"'
+2023-07-31 22:29:12.258 +01:00 [Information] Request finished in 39.879ms 200 image/jpeg
+2023-07-31 22:29:12.258 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutTwo.jpg  
+2023-07-31 22:29:12.261 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutThree.jpg  
+2023-07-31 22:29:12.261 +01:00 [Information] Sending file. Request path: '"/assets/aboutTwo.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutTwo.jpg"'
+2023-07-31 22:29:12.261 +01:00 [Information] Request finished in 3.0659ms 200 image/jpeg
+2023-07-31 22:29:12.308 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutFour.jpg  
+2023-07-31 22:29:12.315 +01:00 [Information] Sending file. Request path: '"/assets/aboutThree.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutThree.jpg"'
+2023-07-31 22:29:12.316 +01:00 [Information] Request finished in 54.9639ms 200 image/jpeg
+2023-07-31 22:29:12.319 +01:00 [Information] Sending file. Request path: '"/assets/aboutFour.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutFour.jpg"'
+2023-07-31 22:29:12.320 +01:00 [Information] Request finished in 11.9746ms 200 image/jpeg
+2023-07-31 22:29:12.756 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger application/json 70
+2023-07-31 22:29:12.757 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:29:12.968 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:29:13.002 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 244.2494ms
+2023-07-31 22:29:13.007 +01:00 [Information] Request finished in 250.1206ms 400 application/json; charset=utf-8
+2023-07-31 22:31:49.258 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger application/json 70
+2023-07-31 22:31:49.259 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:31:49.261 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:31:49.262 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 2.235ms
+2023-07-31 22:31:49.262 +01:00 [Information] Request finished in 4.191ms 400 application/json; charset=utf-8
+2023-07-31 22:31:54.023 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 22:31:54.024 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 22:31:54.034 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:31:54.035 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2086ms.
+2023-07-31 22:31:54.041 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 22:31:54.089 +01:00 [Information] Executed ViewResult - view "Index" executed in 50.3128ms.
+2023-07-31 22:31:54.089 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 56.6541ms
+2023-07-31 22:31:54.089 +01:00 [Information] Request finished in 66.1887ms 200 text/html; charset=utf-8
+2023-07-31 22:31:55.057 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 22:31:55.102 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 22:31:56.753 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 22:31:56.756 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 22:31:56.757 +01:00 [Information] Request finished in 4.0964ms 200 application/javascript
+2023-07-31 22:31:56.768 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 22:31:56.780 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 22:31:56.817 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 22:31:57.991 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 22:31:57.991 +01:00 [Information] Request finished in 1223.4001ms 200 application/javascript
+2023-07-31 22:31:58.084 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 22:31:58.084 +01:00 [Information] Request finished in 3027.0523ms 200 application/javascript
+2023-07-31 22:31:58.291 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 22:31:58.292 +01:00 [Information] Request finished in 3190.5129ms 200 text/css
+2023-07-31 22:31:58.641 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 22:31:58.785 +01:00 [Information] Request finished in 2008.2028ms 200 application/javascript
+2023-07-31 22:31:58.978 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 22:31:58.983 +01:00 [Information] Request finished in 2165.6227ms 200 application/javascript
+2023-07-31 22:32:00.174 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/favicon.ico  
+2023-07-31 22:32:00.176 +01:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\favicon.ico"'
+2023-07-31 22:32:00.176 +01:00 [Information] Request finished in 1.9614ms 200 image/x-icon
+2023-07-31 22:32:01.086 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 53
+2023-07-31 22:32:01.090 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:32:01.091 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:32:01.092 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 1.5243ms
+2023-07-31 22:32:01.092 +01:00 [Information] Request finished in 6.0306ms 400 application/json; charset=utf-8
+2023-07-31 22:32:01.104 +01:00 [Information] Connection id ""0HMSI1KIAPHSH"", Request id ""0HMSI1KIAPHSH:00000002"": the application completed without reading the entire request body.
+2023-07-31 22:33:04.462 +01:00 [Information] User profile is available. Using '"C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:33:07.931 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:33:09.062 +01:00 [Information] Executed DbCommand ("52"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2023-07-31 22:33:09.169 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:33:09.862 +01:00 [Information] Executed DbCommand ("140"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:33:10.074 +01:00 [Information] Executed DbCommand ("21"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:33:10.691 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 22:33:12.118 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 22:33:12.185 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:33:12.212 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.3596ms.
+2023-07-31 22:33:12.313 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 22:33:12.783 +01:00 [Information] Executed ViewResult - view "Index" executed in 521.6124ms.
+2023-07-31 22:33:12.786 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 664.3925ms
+2023-07-31 22:33:12.821 +01:00 [Information] Request finished in 2133.3921ms 200 text/html; charset=utf-8
+2023-07-31 22:33:13.278 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 22:33:13.298 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 22:33:13.300 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 22:33:13.384 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 22:33:13.400 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 22:33:13.425 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 22:33:13.434 +01:00 [Information] Request finished in 34.3481ms 200 application/javascript
+2023-07-31 22:33:13.445 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 22:33:13.452 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 22:33:13.452 +01:00 [Information] Request finished in 152.2844ms 200 application/javascript
+2023-07-31 22:33:13.452 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 22:33:13.453 +01:00 [Information] Request finished in 174.7088ms 200 text/css
+2023-07-31 22:33:13.455 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 22:33:13.455 +01:00 [Information] Request finished in 157.6146ms 200 application/javascript
+2023-07-31 22:33:13.456 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 22:33:13.457 +01:00 [Information] Request finished in 11.6289ms 200 application/javascript
+2023-07-31 22:33:13.552 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 22:33:13.552 +01:00 [Information] Request finished in 167.8648ms 200 application/javascript
+2023-07-31 22:33:17.186 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/favicon.ico  
+2023-07-31 22:33:17.190 +01:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\favicon.ico"'
+2023-07-31 22:33:17.191 +01:00 [Information] Request finished in 5.1939ms 200 image/x-icon
+2023-07-31 22:33:20.152 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js.map  
+2023-07-31 22:33:20.734 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 69
+2023-07-31 22:33:20.764 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/user.png  
+2023-07-31 22:33:20.766 +01:00 [Information] Sending file. Request path: '"/assets/user.png"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\user.png"'
+2023-07-31 22:33:20.766 +01:00 [Information] Request finished in 2.1837ms 200 image/png
+2023-07-31 22:33:20.868 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:33:21.036 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:33:21.264 +01:00 [Information] Sending file. Request path: '"/vendor.js.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js.map"'
+2023-07-31 22:33:21.265 +01:00 [Information] Request finished in 1113.2011ms 200 text/plain
+2023-07-31 22:33:21.337 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/fa-solid-900.woff2  
+2023-07-31 22:33:21.361 +01:00 [Information] Sending file. Request path: '"/fa-solid-900.woff2"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\fa-solid-900.woff2"'
+2023-07-31 22:33:21.362 +01:00 [Information] Request finished in 24.6505ms 200 font/woff2
+2023-07-31 22:33:21.533 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 664.5257ms
+2023-07-31 22:33:21.533 +01:00 [Information] Request finished in 799.3029ms 400 application/json; charset=utf-8
+2023-07-31 22:33:21.621 +01:00 [Information] Connection id ""0HMSI1MUDET42"", Request id ""0HMSI1MUDET42:00000002"": the application completed without reading the entire request body.
+2023-07-31 22:33:51.971 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 22:33:51.971 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 22:33:51.972 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:33:51.972 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0838ms.
+2023-07-31 22:33:51.973 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 22:33:51.982 +01:00 [Information] Executed ViewResult - view "Index" executed in 8.5547ms.
+2023-07-31 22:33:51.982 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 10.2124ms
+2023-07-31 22:33:51.982 +01:00 [Information] Request finished in 12.1846ms 200 text/html; charset=utf-8
+2023-07-31 22:33:52.470 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 22:33:52.473 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 22:33:52.474 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 22:33:52.476 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 22:33:52.480 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 22:33:52.482 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 22:33:52.483 +01:00 [Information] Request finished in 2.5123ms 200 application/javascript
+2023-07-31 22:33:52.543 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 22:33:52.543 +01:00 [Information] Request finished in 68.651ms 200 application/javascript
+2023-07-31 22:33:52.546 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 22:33:52.546 +01:00 [Information] Request finished in 75.969ms 200 application/javascript
+2023-07-31 22:33:52.551 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 22:33:52.552 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 22:33:52.552 +01:00 [Information] Request finished in 75.8278ms 200 text/css
+2023-07-31 22:33:52.561 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 22:33:52.562 +01:00 [Information] Request finished in 10.5349ms 200 application/javascript
+2023-07-31 22:33:52.703 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 22:33:52.703 +01:00 [Information] Request finished in 230.4589ms 200 application/javascript
+2023-07-31 22:33:56.568 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/favicon.ico  
+2023-07-31 22:33:56.570 +01:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\favicon.ico"'
+2023-07-31 22:33:56.570 +01:00 [Information] Request finished in 3.0833ms 200 image/x-icon
+2023-07-31 22:33:57.946 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js.map  
+2023-07-31 22:33:57.954 +01:00 [Information] The file "/vendor.js.map" was not modified
+2023-07-31 22:33:57.967 +01:00 [Information] Request finished in 18.1646ms 304 text/plain
+2023-07-31 22:33:58.511 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/user.png  
+2023-07-31 22:33:58.513 +01:00 [Information] Sending file. Request path: '"/assets/user.png"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\user.png"'
+2023-07-31 22:33:58.513 +01:00 [Information] Request finished in 2.9531ms 200 image/png
+2023-07-31 22:33:58.937 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 69
+2023-07-31 22:33:58.938 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:33:58.940 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:33:58.947 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 9.38ms
+2023-07-31 22:33:58.972 +01:00 [Information] Request finished in 11.0354ms 400 application/json; charset=utf-8
+2023-07-31 22:33:59.012 +01:00 [Information] Connection id ""0HMSI1MUDET40"", Request id ""0HMSI1MUDET40:00000004"": the application completed without reading the entire request body.
+2023-07-31 22:33:59.893 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/fa-solid-900.woff2  
+2023-07-31 22:33:59.911 +01:00 [Information] Sending file. Request path: '"/fa-solid-900.woff2"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\fa-solid-900.woff2"'
+2023-07-31 22:33:59.911 +01:00 [Information] Request finished in 18.0342ms 200 font/woff2
+2023-07-31 22:34:03.044 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 68
+2023-07-31 22:34:03.047 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log(System.String)" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:34:03.048 +01:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2023-07-31 22:34:03.049 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 1.9397ms
+2023-07-31 22:34:03.049 +01:00 [Information] Request finished in 5.5566ms 400 application/json; charset=utf-8
+2023-07-31 22:34:03.050 +01:00 [Information] Connection id ""0HMSI1MUDET42"", Request id ""0HMSI1MUDET42:00000005"": the application completed without reading the entire request body.
+2023-07-31 22:34:03.228 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/api/ClientLocations  
+2023-07-31 22:34:03.319 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/api/projects  
+2023-07-31 22:34:03.656 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js.map  
+2023-07-31 22:34:03.665 +01:00 [Information] Sending file. Request path: '"/main.js.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js.map"'
+2023-07-31 22:34:03.665 +01:00 [Information] Request finished in 9.1212ms 200 text/plain
+2023-07-31 22:34:05.856 +01:00 [Information] Successfully validated the token.
+2023-07-31 22:34:05.862 +01:00 [Information] Successfully validated the token.
+2023-07-31 22:34:06.062 +01:00 [Information] Route matched with "{action = \"GetAllClientLocations\", controller = \"ClientLocations\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MvcTaskManger.ViewModels.ClientLocationViewModel]]] GetAllClientLocations()" on controller "MvcTaskManger.Controllers.ClientLocationsController" ("MvcTaskManger").
+2023-07-31 22:34:06.077 +01:00 [Information] Route matched with "{action = \"GetAllProjects\", controller = \"Projects\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MvcTaskManger.ViewModels.ProjectViewModel]]] GetAllProjects()" on controller "MvcTaskManger.Controllers.ProjectsController" ("MvcTaskManger").
+2023-07-31 22:34:06.079 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.ProjectsController.GetAllProjects (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:34:06.114 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:34:06.271 +01:00 [Information] Authorization was successful.
+2023-07-31 22:34:06.276 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.ClientLocationsController.GetAllClientLocations (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:34:06.286 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:34:06.820 +01:00 [Information] Executed DbCommand ("399"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ClientLocationID], [c].[ClientLocationName]
+FROM [ClientLocations] AS [c]"
+2023-07-31 22:34:06.987 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.ClientLocationsController.GetAllClientLocations (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 709.4838ms.
+2023-07-31 22:34:07.042 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MvcTaskManger.ViewModels.ClientLocationViewModel, MvcTaskManger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-07-31 22:34:07.101 +01:00 [Information] Executed action "MvcTaskManger.Controllers.ClientLocationsController.GetAllClientLocations (MvcTaskManger)" in 1038.4475ms
+2023-07-31 22:34:07.105 +01:00 [Information] Request finished in 3877.2912ms 200 application/json; charset=utf-8
+2023-07-31 22:34:07.662 +01:00 [Information] Executed DbCommand ("321"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProjectID], [p].[Active], [p].[ClientLocationID], [p].[DateOfStart], [p].[ProjectName], [p].[Status], [p].[TeamSize], [p.ClientLocation].[ClientLocationID], [p.ClientLocation].[ClientLocationName]
+FROM [Projects] AS [p]
+INNER JOIN [ClientLocations] AS [p.ClientLocation] ON [p].[ClientLocationID] = [p.ClientLocation].[ClientLocationID]"
+2023-07-31 22:34:08.608 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.ProjectsController.GetAllProjects (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2528.9304ms.
+2023-07-31 22:34:08.610 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MvcTaskManger.ViewModels.ProjectViewModel, MvcTaskManger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-07-31 22:34:08.664 +01:00 [Information] Executed action "MvcTaskManger.Controllers.ProjectsController.GetAllProjects (MvcTaskManger)" in 2586.0738ms
+2023-07-31 22:34:08.665 +01:00 [Information] Request finished in 5346.264ms 200 application/json; charset=utf-8
+2023-07-31 22:35:22.057 +01:00 [Information] User profile is available. Using '"C:\Users\YoussefBaba\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-31 22:35:25.270 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:35:26.286 +01:00 [Information] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Countries] AS [c])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2023-07-31 22:35:26.398 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:35:26.759 +01:00 [Information] Executed DbCommand ("54"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:35:26.951 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:35:27.754 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 22:35:28.675 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 22:35:28.724 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:35:28.742 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.3998ms.
+2023-07-31 22:35:28.818 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 22:35:29.071 +01:00 [Information] Executed ViewResult - view "Index" executed in 282.3023ms.
+2023-07-31 22:35:29.073 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 396.3849ms
+2023-07-31 22:35:29.121 +01:00 [Information] Request finished in 1369.898ms 200 text/html; charset=utf-8
+2023-07-31 22:35:29.377 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 22:35:29.377 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 22:35:29.377 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 22:35:29.384 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 22:35:29.385 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 22:35:29.472 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 22:35:29.484 +01:00 [Information] Request finished in 99.3205ms 200 application/javascript
+2023-07-31 22:35:29.485 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 22:35:29.543 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 22:35:29.544 +01:00 [Information] Request finished in 166.9161ms 200 application/javascript
+2023-07-31 22:35:29.545 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 22:35:29.545 +01:00 [Information] Request finished in 168.0931ms 200 application/javascript
+2023-07-31 22:35:29.574 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 22:35:29.576 +01:00 [Information] Request finished in 192.2122ms 200 application/javascript
+2023-07-31 22:35:29.577 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 22:35:29.579 +01:00 [Information] Request finished in 200.6836ms 200 text/css
+2023-07-31 22:35:29.676 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 22:35:29.676 +01:00 [Information] Request finished in 191.5572ms 200 application/javascript
+2023-07-31 22:35:33.208 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 48
+2023-07-31 22:35:33.215 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:35:33.220 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:35:33.500 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 279.0019ms.
+2023-07-31 22:35:33.507 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:35:33.508 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 292.7362ms
+2023-07-31 22:35:33.511 +01:00 [Information] Request finished in 303.9364ms 200 
+2023-07-31 22:35:36.216 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/account/authenticate application/json 51
+2023-07-31 22:35:36.467 +01:00 [Information] Route matched with "{action = \"Authenticate\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[MvcTaskManger.Identity.ApplicationUser]] Authenticate(MvcTaskManger.ViewModels.LoginViewModel)" on controller "MvcTaskManger.Controllers.AccountController" ("MvcTaskManger").
+2023-07-31 22:35:36.764 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:35:36.805 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:35:36.905 +01:00 [Information] Executed DbCommand ("31"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2023-07-31 22:35:37.532 +01:00 [Information] Executed DbCommand ("16"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2023-07-31 22:35:37.843 +01:00 [Information] Executed DbCommand ("18"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2023-07-31 22:35:37.874 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:35:37.962 +01:00 [Information] Executed DbCommand ("16"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2023-07-31 22:35:38.100 +01:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2023-07-31 22:35:38.183 +01:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2023-07-31 22:35:38.267 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2023-07-31 22:35:38.414 +01:00 [Information] Executed DbCommand ("31"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2023-07-31 22:35:39.870 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3104.8161ms.
+2023-07-31 22:35:39.932 +01:00 [Information] Executing ObjectResult, writing value of type '"MvcTaskManger.Identity.ApplicationUser"'.
+2023-07-31 22:35:40.227 +01:00 [Information] Executed action "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" in 3759.6422ms
+2023-07-31 22:35:40.244 +01:00 [Information] Request finished in 4028.3041ms 200 application/json; charset=utf-8
+2023-07-31 22:35:40.325 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/account/authenticate application/json 51
+2023-07-31 22:35:40.327 +01:00 [Information] Route matched with "{action = \"Authenticate\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[MvcTaskManger.Identity.ApplicationUser]] Authenticate(MvcTaskManger.ViewModels.LoginViewModel)" on controller "MvcTaskManger.Controllers.AccountController" ("MvcTaskManger").
+2023-07-31 22:35:40.591 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:35:40.592 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:35:40.751 +01:00 [Information] Executed DbCommand ("158"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2023-07-31 22:35:40.910 +01:00 [Information] Executed DbCommand ("49"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2023-07-31 22:35:40.916 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/user.png  
+2023-07-31 22:35:40.918 +01:00 [Information] Sending file. Request path: '"/assets/user.png"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\user.png"'
+2023-07-31 22:35:40.918 +01:00 [Information] Request finished in 1.9992ms 200 image/png
+2023-07-31 22:35:40.923 +01:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2023-07-31 22:35:40.927 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 69
+2023-07-31 22:35:40.928 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:35:40.929 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:35:40.942 +01:00 [Information] Executed DbCommand ("17"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 22:35:40.986 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 57.05ms.
+2023-07-31 22:35:40.987 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:35:40.987 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 58.833ms
+2023-07-31 22:35:40.987 +01:00 [Information] Request finished in 60.663ms 200 
+2023-07-31 22:35:40.995 +01:00 [Information] Executed DbCommand ("48"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2023-07-31 22:35:41.000 +01:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2023-07-31 22:35:41.062 +01:00 [Information] Executed DbCommand ("60"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2023-07-31 22:35:41.095 +01:00 [Information] Executed DbCommand ("31"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2023-07-31 22:35:41.166 +01:00 [Information] Executed DbCommand ("65"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2023-07-31 22:35:41.171 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 578.2416ms.
+2023-07-31 22:35:41.174 +01:00 [Information] Executing ObjectResult, writing value of type '"MvcTaskManger.Identity.ApplicationUser"'.
+2023-07-31 22:35:41.175 +01:00 [Information] Executed action "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" in 847.7417ms
+2023-07-31 22:35:41.176 +01:00 [Information] Request finished in 850.893ms 200 application/json; charset=utf-8
+2023-07-31 22:35:41.679 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/fa-solid-900.woff2  
+2023-07-31 22:35:41.685 +01:00 [Information] Sending file. Request path: '"/fa-solid-900.woff2"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\fa-solid-900.woff2"'
+2023-07-31 22:35:41.685 +01:00 [Information] Request finished in 6.9706ms 200 font/woff2
+2023-07-31 22:35:44.946 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutOne.jpg  
+2023-07-31 22:35:44.949 +01:00 [Information] Sending file. Request path: '"/assets/aboutOne.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutOne.jpg"'
+2023-07-31 22:35:44.949 +01:00 [Information] Request finished in 3.1736ms 200 image/jpeg
+2023-07-31 22:35:44.963 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutTwo.jpg  
+2023-07-31 22:35:44.971 +01:00 [Information] Sending file. Request path: '"/assets/aboutTwo.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutTwo.jpg"'
+2023-07-31 22:35:44.971 +01:00 [Information] Request finished in 8.5691ms 200 image/jpeg
+2023-07-31 22:35:44.972 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutFour.jpg  
+2023-07-31 22:35:44.978 +01:00 [Information] Sending file. Request path: '"/assets/aboutFour.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutFour.jpg"'
+2023-07-31 22:35:44.979 +01:00 [Information] Request finished in 6.6936ms 200 image/jpeg
+2023-07-31 22:35:44.980 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/aboutThree.jpg  
+2023-07-31 22:35:44.982 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 59
+2023-07-31 22:35:44.983 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:35:44.984 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:35:45.010 +01:00 [Information] Sending file. Request path: '"/assets/aboutThree.jpg"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\assets\aboutThree.jpg"'
+2023-07-31 22:35:45.011 +01:00 [Information] Request finished in 31.0148ms 200 image/jpeg
+2023-07-31 22:35:45.017 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 32.9083ms.
+2023-07-31 22:35:45.017 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:35:45.017 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 34.0156ms
+2023-07-31 22:35:45.018 +01:00 [Information] Request finished in 35.7027ms 200 
+2023-07-31 22:35:50.919 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 68
+2023-07-31 22:35:50.925 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:35:50.934 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:35:51.417 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 481.8792ms.
+2023-07-31 22:35:51.418 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:35:51.418 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 492.2406ms
+2023-07-31 22:35:51.418 +01:00 [Information] Request finished in 500.2502ms 200 
+2023-07-31 22:35:51.516 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/api/ClientLocations  
+2023-07-31 22:35:51.528 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/api/projects  
+2023-07-31 22:35:53.091 +01:00 [Information] Successfully validated the token.
+2023-07-31 22:35:53.091 +01:00 [Information] Successfully validated the token.
+2023-07-31 22:35:53.115 +01:00 [Information] Route matched with "{action = \"GetAllProjects\", controller = \"Projects\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MvcTaskManger.ViewModels.ProjectViewModel]]] GetAllProjects()" on controller "MvcTaskManger.Controllers.ProjectsController" ("MvcTaskManger").
+2023-07-31 22:35:53.117 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.ProjectsController.GetAllProjects (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:35:53.124 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:35:53.306 +01:00 [Information] Route matched with "{action = \"GetAllClientLocations\", controller = \"ClientLocations\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MvcTaskManger.ViewModels.ClientLocationViewModel]]] GetAllClientLocations()" on controller "MvcTaskManger.Controllers.ClientLocationsController" ("MvcTaskManger").
+2023-07-31 22:35:53.725 +01:00 [Information] Authorization was successful.
+2023-07-31 22:35:53.729 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.ClientLocationsController.GetAllClientLocations (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:35:53.742 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:35:54.722 +01:00 [Information] Executed DbCommand ("646"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[ClientLocationID], [c].[ClientLocationName]
+FROM [ClientLocations] AS [c]"
+2023-07-31 22:35:55.118 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.ClientLocationsController.GetAllClientLocations (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1388.7404ms.
+2023-07-31 22:35:55.119 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MvcTaskManger.ViewModels.ClientLocationViewModel, MvcTaskManger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-07-31 22:35:55.317 +01:00 [Information] Executed action "MvcTaskManger.Controllers.ClientLocationsController.GetAllClientLocations (MvcTaskManger)" in 2008.2375ms
+2023-07-31 22:35:55.317 +01:00 [Information] Request finished in 3801.7409ms 200 application/json; charset=utf-8
+2023-07-31 22:35:56.451 +01:00 [Information] Executed DbCommand ("1,193"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProjectID], [p].[Active], [p].[ClientLocationID], [p].[DateOfStart], [p].[ProjectName], [p].[Status], [p].[TeamSize], [p.ClientLocation].[ClientLocationID], [p.ClientLocation].[ClientLocationName]
+FROM [Projects] AS [p]
+INNER JOIN [ClientLocations] AS [p.ClientLocation] ON [p].[ClientLocationID] = [p.ClientLocation].[ClientLocationID]"
+2023-07-31 22:35:57.064 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.ProjectsController.GetAllProjects (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 3946.1522ms.
+2023-07-31 22:35:57.064 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MvcTaskManger.ViewModels.ProjectViewModel, MvcTaskManger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-07-31 22:35:57.222 +01:00 [Information] Executed action "MvcTaskManger.Controllers.ProjectsController.GetAllProjects (MvcTaskManger)" in 4106.2538ms
+2023-07-31 22:35:57.223 +01:00 [Information] Request finished in 5694.6302ms 200 application/json; charset=utf-8
+2023-07-31 22:58:42.642 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 53
+2023-07-31 22:58:42.643 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:58:42.643 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:58:42.650 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 6.5398ms.
+2023-07-31 22:58:42.651 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:58:42.651 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 7.9492ms
+2023-07-31 22:58:42.652 +01:00 [Information] Request finished in 10.5637ms 200 
+2023-07-31 22:58:44.554 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 54
+2023-07-31 22:58:44.555 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:58:44.558 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:58:44.586 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 27.2097ms.
+2023-07-31 22:58:44.586 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:58:44.586 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 30.8445ms
+2023-07-31 22:58:44.587 +01:00 [Information] Request finished in 32.8818ms 200 
+2023-07-31 22:58:44.672 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/api/Countries  
+2023-07-31 22:58:44.688 +01:00 [Information] Route matched with "{action = \"GetAllProjects\", controller = \"Countries\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MvcTaskManger.ViewModels.CountryViewModel]]] GetAllProjects()" on controller "MvcTaskManger.Controllers.CountriesController" ("MvcTaskManger").
+2023-07-31 22:58:44.689 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.CountriesController.GetAllProjects (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:58:44.704 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:58:45.164 +01:00 [Information] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [temp].[CountryID], [temp].[CountryName]
+FROM [Countries] AS [temp]
+ORDER BY [temp].[CountryName]"
+2023-07-31 22:58:45.209 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.CountriesController.GetAllProjects (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 519.0604ms.
+2023-07-31 22:58:45.209 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MvcTaskManger.ViewModels.CountryViewModel, MvcTaskManger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-07-31 22:58:45.227 +01:00 [Information] Executed action "MvcTaskManger.Controllers.CountriesController.GetAllProjects (MvcTaskManger)" in 538.2159ms
+2023-07-31 22:58:45.227 +01:00 [Information] Request finished in 555.2628ms 200 application/json; charset=utf-8
+2023-07-31 22:58:53.189 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 53
+2023-07-31 22:58:53.196 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:58:53.200 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:58:53.261 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 60.1392ms.
+2023-07-31 22:58:53.262 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:58:53.262 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 62.2675ms
+2023-07-31 22:58:53.263 +01:00 [Information] Request finished in 73.6988ms 200 
+2023-07-31 22:58:54.749 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 54
+2023-07-31 22:58:54.750 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 22:58:54.751 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:58:54.803 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 51.9618ms.
+2023-07-31 22:58:54.803 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 22:58:54.803 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 52.9192ms
+2023-07-31 22:58:54.804 +01:00 [Information] Request finished in 54.8094ms 200 
+2023-07-31 22:58:54.853 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/api/Countries  
+2023-07-31 22:58:54.853 +01:00 [Information] Route matched with "{action = \"GetAllProjects\", controller = \"Countries\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MvcTaskManger.ViewModels.CountryViewModel]]] GetAllProjects()" on controller "MvcTaskManger.Controllers.CountriesController" ("MvcTaskManger").
+2023-07-31 22:58:54.854 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.CountriesController.GetAllProjects (MvcTaskManger)" - Validation state: Valid
+2023-07-31 22:58:54.858 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 22:58:54.957 +01:00 [Information] Executed DbCommand ("98"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [temp].[CountryID], [temp].[CountryName]
+FROM [Countries] AS [temp]
+ORDER BY [temp].[CountryName]"
+2023-07-31 22:58:54.962 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.CountriesController.GetAllProjects (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 108.3686ms.
+2023-07-31 22:58:54.963 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MvcTaskManger.ViewModels.CountryViewModel, MvcTaskManger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-07-31 22:58:54.964 +01:00 [Information] Executed action "MvcTaskManger.Controllers.CountriesController.GetAllProjects (MvcTaskManger)" in 110.3114ms
+2023-07-31 22:58:54.964 +01:00 [Information] Request finished in 111.6014ms 200 application/json; charset=utf-8
+2023-07-31 23:01:53.807 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 53
+2023-07-31 23:01:53.808 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 23:01:53.808 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:01:53.813 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 4.7179ms.
+2023-07-31 23:01:53.814 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 23:01:53.814 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 5.598ms
+2023-07-31 23:01:53.814 +01:00 [Information] Request finished in 7.3997ms 200 
+2023-07-31 23:01:55.091 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 54
+2023-07-31 23:01:55.092 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 23:01:55.092 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:01:55.106 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 13.6793ms.
+2023-07-31 23:01:55.107 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 23:01:55.107 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 14.7412ms
+2023-07-31 23:01:55.107 +01:00 [Information] Request finished in 16.7878ms 200 
+2023-07-31 23:01:55.149 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/api/Countries  
+2023-07-31 23:01:55.150 +01:00 [Information] Route matched with "{action = \"GetAllProjects\", controller = \"Countries\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[MvcTaskManger.ViewModels.CountryViewModel]]] GetAllProjects()" on controller "MvcTaskManger.Controllers.CountriesController" ("MvcTaskManger").
+2023-07-31 23:01:55.153 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.CountriesController.GetAllProjects (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:01:55.154 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 23:01:55.627 +01:00 [Information] Executed DbCommand ("471"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [temp].[CountryID], [temp].[CountryName]
+FROM [Countries] AS [temp]
+ORDER BY [temp].[CountryName]"
+2023-07-31 23:01:55.629 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.CountriesController.GetAllProjects (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 475.8677ms.
+2023-07-31 23:01:55.634 +01:00 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[MvcTaskManger.ViewModels.CountryViewModel, MvcTaskManger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2023-07-31 23:01:55.636 +01:00 [Information] Executed action "MvcTaskManger.Controllers.CountriesController.GetAllProjects (MvcTaskManger)" in 485.771ms
+2023-07-31 23:01:55.637 +01:00 [Information] Request finished in 487.647ms 200 application/json; charset=utf-8
+2023-07-31 23:01:56.043 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 53
+2023-07-31 23:01:56.044 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 23:01:56.044 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:01:56.058 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 13.5247ms.
+2023-07-31 23:01:56.059 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 23:01:56.059 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 14.604ms
+2023-07-31 23:01:56.059 +01:00 [Information] Request finished in 15.7923ms 200 
+2023-07-31 23:02:00.835 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 23:02:00.836 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 23:02:00.836 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:02:00.837 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1362ms.
+2023-07-31 23:02:00.847 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 23:02:00.852 +01:00 [Information] Executed ViewResult - view "Index" executed in 14.5762ms.
+2023-07-31 23:02:00.852 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 16.4731ms
+2023-07-31 23:02:00.853 +01:00 [Information] Request finished in 17.7443ms 200 text/html; charset=utf-8
+2023-07-31 23:02:01.350 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 23:02:01.363 +01:00 [Information] The file "/runtime.js" was not modified
+2023-07-31 23:02:01.369 +01:00 [Information] Request finished in 19.7569ms 304 application/javascript
+2023-07-31 23:02:01.370 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 23:02:01.371 +01:00 [Information] The file "/polyfills.js" was not modified
+2023-07-31 23:02:01.371 +01:00 [Information] Request finished in 1.1659ms 304 application/javascript
+2023-07-31 23:02:01.394 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 23:02:01.395 +01:00 [Information] The file "/styles.css" was not modified
+2023-07-31 23:02:01.396 +01:00 [Information] Request finished in 2.3459ms 304 text/css
+2023-07-31 23:02:01.415 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 23:02:01.416 +01:00 [Information] The file "/scripts.js" was not modified
+2023-07-31 23:02:01.417 +01:00 [Information] Request finished in 2.0014ms 304 application/javascript
+2023-07-31 23:02:01.449 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 23:02:01.450 +01:00 [Information] The file "/vendor.js" was not modified
+2023-07-31 23:02:01.450 +01:00 [Information] Request finished in 1.8321ms 304 application/javascript
+2023-07-31 23:02:01.500 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 23:02:01.502 +01:00 [Information] The file "/main.js" was not modified
+2023-07-31 23:02:01.502 +01:00 [Information] Request finished in 1.732ms 304 application/javascript
+2023-07-31 23:02:03.422 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 48
+2023-07-31 23:02:03.423 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 23:02:03.425 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:02:03.429 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 4.2186ms.
+2023-07-31 23:02:03.430 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 23:02:03.430 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 5.1615ms
+2023-07-31 23:02:03.430 +01:00 [Information] Request finished in 7.6885ms 200 
+2023-07-31 23:02:06.364 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/account/authenticate application/json 51
+2023-07-31 23:02:06.365 +01:00 [Information] Route matched with "{action = \"Authenticate\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[MvcTaskManger.Identity.ApplicationUser]] Authenticate(MvcTaskManger.ViewModels.LoginViewModel)" on controller "MvcTaskManger.Controllers.AccountController" ("MvcTaskManger").
+2023-07-31 23:02:06.374 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:02:06.386 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 23:02:06.441 +01:00 [Information] Executed DbCommand ("53"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2023-07-31 23:02:06.547 +01:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2023-07-31 23:02:06.565 +01:00 [Information] Executed DbCommand ("15"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2023-07-31 23:02:06.575 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 23:02:06.588 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2023-07-31 23:02:06.589 +01:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2023-07-31 23:02:06.599 +01:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2023-07-31 23:02:06.608 +01:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2023-07-31 23:02:06.620 +01:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2023-07-31 23:02:06.621 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 246.1172ms.
+2023-07-31 23:02:06.622 +01:00 [Information] Executing ObjectResult, writing value of type '"MvcTaskManger.Identity.ApplicationUser"'.
+2023-07-31 23:02:06.622 +01:00 [Information] Executed action "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" in 256.4287ms
+2023-07-31 23:02:06.622 +01:00 [Information] Request finished in 258.2788ms 200 application/json; charset=utf-8
+2023-07-31 23:02:06.785 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/assets/user.png  
+2023-07-31 23:02:06.786 +01:00 [Information] The file "/assets/user.png" was not modified
+2023-07-31 23:02:06.787 +01:00 [Information] Request finished in 1.2359ms 304 image/png
+2023-07-31 23:02:06.828 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 69
+2023-07-31 23:02:06.829 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 23:02:06.829 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:02:06.842 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 12.3857ms.
+2023-07-31 23:02:06.842 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 23:02:06.843 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 14.2237ms
+2023-07-31 23:02:06.844 +01:00 [Information] Request finished in 15.7766ms 200 
+2023-07-31 23:02:09.775 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 23:02:09.776 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 23:02:09.776 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:02:09.777 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0202ms.
+2023-07-31 23:02:09.777 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 23:02:09.784 +01:00 [Information] Executed ViewResult - view "Index" executed in 4.5337ms.
+2023-07-31 23:02:09.784 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 8.4125ms
+2023-07-31 23:02:09.785 +01:00 [Information] Request finished in 10.1978ms 200 text/html; charset=utf-8
+2023-07-31 23:02:13.241 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 53
+2023-07-31 23:02:13.242 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 23:02:13.242 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:02:13.301 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 58.8126ms.
+2023-07-31 23:02:13.302 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 23:02:13.302 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 60.0801ms
+2023-07-31 23:02:13.303 +01:00 [Information] Request finished in 62.4038ms 200 
+2023-07-31 23:02:15.546 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/account/authenticate application/json 57
+2023-07-31 23:02:15.547 +01:00 [Information] Route matched with "{action = \"Authenticate\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[MvcTaskManger.Identity.ApplicationUser]] Authenticate(MvcTaskManger.ViewModels.LoginViewModel)" on controller "MvcTaskManger.Controllers.AccountController" ("MvcTaskManger").
+2023-07-31 23:02:15.596 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:02:15.598 +01:00 [Information] Entity Framework Core "2.1.14-servicing-32113" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2023-07-31 23:02:15.710 +01:00 [Information] Executed DbCommand ("100"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2023-07-31 23:02:15.805 +01:00 [Information] Executed DbCommand ("14"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2023-07-31 23:02:15.843 +01:00 [Information] Executed DbCommand ("37"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2023-07-31 23:02:15.860 +01:00 [Information] Executed DbCommand ("15"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2023-07-31 23:02:15.881 +01:00 [Information] Executed DbCommand ("19"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2023-07-31 23:02:15.887 +01:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2023-07-31 23:02:15.909 +01:00 [Information] Executed DbCommand ("18"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[CountryID], [u].[DateOfBirth], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[Gender], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[ReceiveNewsLetters], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2023-07-31 23:02:15.939 +01:00 [Information] Executed DbCommand ("29"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2023-07-31 23:02:15.956 +01:00 [Information] Executed DbCommand ("13"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2023-07-31 23:02:15.964 +01:00 [Information] Executed DbCommand ("5"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2023-07-31 23:02:15.972 +01:00 [Information] Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2023-07-31 23:02:15.973 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 376.6239ms.
+2023-07-31 23:02:15.974 +01:00 [Information] Executing ObjectResult, writing value of type '"MvcTaskManger.Identity.ApplicationUser"'.
+2023-07-31 23:02:15.974 +01:00 [Information] Executed action "MvcTaskManger.Controllers.AccountController.Authenticate (MvcTaskManger)" in 426.3767ms
+2023-07-31 23:02:15.976 +01:00 [Information] Request finished in 429.4709ms 200 application/json; charset=utf-8
+2023-07-31 23:02:16.477 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 71
+2023-07-31 23:02:16.477 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 23:02:16.478 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:02:16.485 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 7.0623ms.
+2023-07-31 23:02:16.486 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 23:02:16.486 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 8.0917ms
+2023-07-31 23:02:16.487 +01:00 [Information] Request finished in 10.5104ms 200 
+2023-07-31 23:02:19.006 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 23:02:19.007 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 23:02:19.008 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:02:19.008 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0206ms.
+2023-07-31 23:02:19.008 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 23:02:19.009 +01:00 [Information] Executed ViewResult - view "Index" executed in 0.546ms.
+2023-07-31 23:02:19.010 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 2.2038ms
+2023-07-31 23:02:19.010 +01:00 [Information] Request finished in 4.1108ms 200 text/html; charset=utf-8
+2023-07-31 23:06:08.123 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 23:06:08.125 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 23:06:08.125 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:06:08.125 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0277ms.
+2023-07-31 23:06:08.126 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 23:06:08.127 +01:00 [Information] Executed ViewResult - view "Index" executed in 1.1838ms.
+2023-07-31 23:06:08.127 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 2.2016ms
+2023-07-31 23:06:08.127 +01:00 [Information] Request finished in 5.0755ms 200 text/html; charset=utf-8
+2023-07-31 23:06:08.493 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 23:06:08.521 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 23:06:08.524 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 23:06:08.530 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 23:06:08.530 +01:00 [Information] Request finished in 36.969ms 200 text/css
+2023-07-31 23:06:08.531 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 23:06:08.531 +01:00 [Information] Request finished in 7.7734ms 200 application/javascript
+2023-07-31 23:06:08.532 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 23:06:08.532 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 23:06:08.532 +01:00 [Information] Request finished in 11.6346ms 200 application/javascript
+2023-07-31 23:06:08.536 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 23:06:08.537 +01:00 [Information] Request finished in 4.9048ms 200 application/javascript
+2023-07-31 23:06:08.582 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 23:06:08.830 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 23:06:08.830 +01:00 [Information] Request finished in 248.1195ms 200 application/javascript
+2023-07-31 23:06:08.845 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 23:06:08.864 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 23:06:08.864 +01:00 [Information] Request finished in 19.2149ms 200 application/javascript
+2023-07-31 23:06:16.976 +01:00 [Information] Request starting HTTP/1.1 POST http://localhost:53046/api/RouterLogger text/plain 71
+2023-07-31 23:06:16.977 +01:00 [Information] Route matched with "{action = \"Log\", controller = \"RouterLogger\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Log()" on controller "MvcTaskManger.Controllers.RouterLoggerController" ("MvcTaskManger").
+2023-07-31 23:06:16.978 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:06:16.983 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 5.3232ms.
+2023-07-31 23:06:16.984 +01:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2023-07-31 23:06:16.984 +01:00 [Information] Executed action "MvcTaskManger.Controllers.RouterLoggerController.Log (MvcTaskManger)" in 6.5309ms
+2023-07-31 23:06:16.984 +01:00 [Information] Request finished in 7.8752ms 200 
+2023-07-31 23:06:53.797 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 23:06:53.802 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 23:06:53.802 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:06:53.802 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0231ms.
+2023-07-31 23:06:53.803 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 23:06:53.803 +01:00 [Information] Executed ViewResult - view "Index" executed in 0.7192ms.
+2023-07-31 23:06:53.804 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 2.3152ms
+2023-07-31 23:06:53.805 +01:00 [Information] Request finished in 7.2556ms 200 text/html; charset=utf-8
+2023-07-31 23:06:54.009 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 23:06:54.011 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 23:06:54.011 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 23:06:54.012 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 23:06:54.012 +01:00 [Information] Request finished in 1.6895ms 200 application/javascript
+2023-07-31 23:06:54.018 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 23:06:54.019 +01:00 [Information] Request finished in 8.1375ms 200 application/javascript
+2023-07-31 23:06:54.021 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 23:06:54.021 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 23:06:54.025 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 23:06:54.025 +01:00 [Information] Request finished in 16.4903ms 200 text/css
+2023-07-31 23:06:54.048 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 23:06:54.052 +01:00 [Information] Request finished in 30.7938ms 200 application/javascript
+2023-07-31 23:06:54.053 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 23:06:54.077 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 23:06:54.078 +01:00 [Information] Request finished in 24.6767ms 200 application/javascript
+2023-07-31 23:06:54.131 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 23:06:54.136 +01:00 [Information] Request finished in 115.1158ms 200 application/javascript
+2023-07-31 23:07:01.518 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 23:07:01.528 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 23:07:01.529 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:07:01.529 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0246ms.
+2023-07-31 23:07:01.531 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 23:07:01.532 +01:00 [Information] Executed ViewResult - view "Index" executed in 2.564ms.
+2023-07-31 23:07:01.533 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 4.3849ms
+2023-07-31 23:07:01.533 +01:00 [Information] Request finished in 14.8469ms 200 text/html; charset=utf-8
+2023-07-31 23:07:01.714 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 23:07:01.715 +01:00 [Information] The file "/polyfills.js" was not modified
+2023-07-31 23:07:01.715 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 23:07:01.715 +01:00 [Information] Request finished in 1.2746ms 304 application/javascript
+2023-07-31 23:07:01.715 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 23:07:01.716 +01:00 [Information] The file "/styles.css" was not modified
+2023-07-31 23:07:01.716 +01:00 [Information] Request finished in 0.9944ms 304 text/css
+2023-07-31 23:07:01.716 +01:00 [Information] The file "/runtime.js" was not modified
+2023-07-31 23:07:01.716 +01:00 [Information] Request finished in 0.9786ms 304 application/javascript
+2023-07-31 23:07:01.718 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 23:07:01.719 +01:00 [Information] The file "/scripts.js" was not modified
+2023-07-31 23:07:01.720 +01:00 [Information] Request finished in 1.8911ms 304 application/javascript
+2023-07-31 23:07:01.728 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 23:07:01.731 +01:00 [Information] The file "/vendor.js" was not modified
+2023-07-31 23:07:01.747 +01:00 [Information] Request finished in 18.5361ms 304 application/javascript
+2023-07-31 23:07:01.748 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 23:07:01.749 +01:00 [Information] The file "/main.js" was not modified
+2023-07-31 23:07:01.749 +01:00 [Information] Request finished in 1.6985ms 304 application/javascript
+2023-07-31 23:07:10.784 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css.map  
+2023-07-31 23:07:10.808 +01:00 [Information] Sending file. Request path: '"/styles.css.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css.map"'
+2023-07-31 23:07:10.808 +01:00 [Information] Request finished in 25.5349ms 200 text/plain
+2023-07-31 23:07:13.806 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js.map  
+2023-07-31 23:07:13.919 +01:00 [Information] Sending file. Request path: '"/vendor.js.map"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js.map"'
+2023-07-31 23:07:13.920 +01:00 [Information] Request finished in 114.1535ms 200 text/plain
+2023-07-31 23:07:50.278 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 23:07:50.279 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 23:07:50.280 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:07:50.280 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0233ms.
+2023-07-31 23:07:50.281 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 23:07:50.281 +01:00 [Information] Executed ViewResult - view "Index" executed in 1.0061ms.
+2023-07-31 23:07:50.282 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 2.1404ms
+2023-07-31 23:07:50.282 +01:00 [Information] Request finished in 3.5969ms 200 text/html; charset=utf-8
+2023-07-31 23:08:00.637 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 23:08:00.639 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 23:08:00.641 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 23:08:00.641 +01:00 [Information] Request finished in 1.8128ms 200 application/javascript
+2023-07-31 23:08:00.650 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 23:08:00.651 +01:00 [Information] Request finished in 14.4974ms 200 text/css
+2023-07-31 23:08:00.669 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 23:08:00.669 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 23:08:00.673 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 23:08:00.674 +01:00 [Information] Request finished in 4.2371ms 200 application/javascript
+2023-07-31 23:08:00.686 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 23:08:00.690 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 23:08:00.690 +01:00 [Information] Request finished in 4.2884ms 200 application/javascript
+2023-07-31 23:08:00.710 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 23:08:00.727 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 23:08:00.728 +01:00 [Information] Request finished in 18.1046ms 200 application/javascript
+2023-07-31 23:08:00.757 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 23:08:00.758 +01:00 [Information] Request finished in 88.4324ms 200 application/javascript
+2023-07-31 23:08:03.414 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/favicon.ico  
+2023-07-31 23:08:03.428 +01:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\favicon.ico"'
+2023-07-31 23:08:03.428 +01:00 [Information] Request finished in 14.2285ms 200 image/x-icon
+2023-07-31 23:08:11.228 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/  
+2023-07-31 23:08:11.229 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MvcTaskManger.Controllers.HomeController" ("MvcTaskManger").
+2023-07-31 23:08:11.230 +01:00 [Information] Executing action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" - Validation state: Valid
+2023-07-31 23:08:11.230 +01:00 [Information] Executed action method "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.041ms.
+2023-07-31 23:08:11.231 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-07-31 23:08:11.233 +01:00 [Information] Executed ViewResult - view "Index" executed in 2.2027ms.
+2023-07-31 23:08:11.234 +01:00 [Information] Executed action "MvcTaskManger.Controllers.HomeController.Index (MvcTaskManger)" in 4.2875ms
+2023-07-31 23:08:11.234 +01:00 [Information] Request finished in 6.4524ms 200 text/html; charset=utf-8
+2023-07-31 23:08:12.895 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/styles.css  
+2023-07-31 23:08:12.911 +01:00 [Information] Sending file. Request path: '"/styles.css"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\styles.css"'
+2023-07-31 23:08:12.911 +01:00 [Information] Request finished in 16.0993ms 200 text/css
+2023-07-31 23:08:13.064 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/main.js  
+2023-07-31 23:08:13.065 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/vendor.js  
+2023-07-31 23:08:13.067 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/runtime.js  
+2023-07-31 23:08:13.069 +01:00 [Information] Sending file. Request path: '"/runtime.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\runtime.js"'
+2023-07-31 23:08:13.070 +01:00 [Information] Request finished in 2.3781ms 200 application/javascript
+2023-07-31 23:08:13.070 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/polyfills.js  
+2023-07-31 23:08:13.080 +01:00 [Information] Sending file. Request path: '"/polyfills.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\polyfills.js"'
+2023-07-31 23:08:13.080 +01:00 [Information] Request finished in 10.3051ms 200 application/javascript
+2023-07-31 23:08:13.086 +01:00 [Information] Sending file. Request path: '"/main.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\main.js"'
+2023-07-31 23:08:13.096 +01:00 [Information] Request finished in 32.0383ms 200 application/javascript
+2023-07-31 23:08:13.099 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/scripts.js  
+2023-07-31 23:08:13.112 +01:00 [Information] Sending file. Request path: '"/scripts.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\scripts.js"'
+2023-07-31 23:08:13.112 +01:00 [Information] Request finished in 13.2925ms 200 application/javascript
+2023-07-31 23:08:13.301 +01:00 [Information] Sending file. Request path: '"/vendor.js"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\vendor.js"'
+2023-07-31 23:08:13.302 +01:00 [Information] Request finished in 236.254ms 200 application/javascript
+2023-07-31 23:08:16.232 +01:00 [Information] Request starting HTTP/1.1 GET http://localhost:53046/favicon.ico  
+2023-07-31 23:08:16.237 +01:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\YoussefBaba\Desktop\My_Computer\My-Projects\Cours\Angular\Angular_Complete_Guide\MvcTaskManger\MvcTaskManger\wwwroot\favicon.ico"'
+2023-07-31 23:08:16.237 +01:00 [Information] Request finished in 5.0012ms 200 image/x-icon

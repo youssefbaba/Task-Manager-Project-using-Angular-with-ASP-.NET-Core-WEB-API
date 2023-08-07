@@ -1,0 +1,49 @@
+<form>
+    <div class="row">
+        <div class="col-md-9 col-lg-6 col-xl-5 mx-auto">
+            <div class="card mt-4">
+                <div class="card-header text-bg-secondary">
+                    <h3>Login</h3>
+                    <!-- <div class="alert alert-danger" role="alert" *ngIf="loginError != null">
+                        {{loginError}}
+                    </div> -->
+                    <div *ngIf="(loginError != null)" appAlert [error]="loginError"></div>
+                    <!-- Host Element for Alert Directive -->
+                </div>
+                <div class="my-3 ps-4">
+                    <span>Not Yet Registred? </span><a routerLink="/signup">Register</a>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <label for="txtEmailLogin" class="col-sm-4 col-form-label">Email</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="txtEmailLogin" placeholder="Email" name="email"
+                                [(ngModel)]="loginViewModel.email" #inputEmailInLoginForm>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="txtPasswordLogin" class="col-sm-4 col-form-label">Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" id="txtPasswordLogin" placeholder="Password"
+                                name="password" [(ngModel)]="loginViewModel.password">
+                        </div>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" (click)="onClickLogin()">Login</button>
+
+                        <!-- 
+                        <div *appRepeater></div>
+
+                        // Converted as bellow
+                        <ng-template>
+                            <div></div>
+                        </ng-template> 
+                        -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

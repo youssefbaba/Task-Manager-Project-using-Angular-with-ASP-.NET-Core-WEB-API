@@ -1,0 +1,33 @@
+<h5>Masters</h5>
+<div class="row">
+    <div class="col-md-4 col-lg-2">
+        <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action com-item"
+                *ngFor="let masterMenuItem of masterMenuItems"
+                [ngClass]="{ 'active': activeItem == masterMenuItem.itemName}" (click)="menuItemClick(masterMenuItem)">
+                {{masterMenuItem.displayName}}
+            </button>
+        </div>
+    </div>
+    <div class="col-md-8 col-lg-10">
+        <ul class="nav nav-tabs" role="tablist">
+            <li *ngFor="let tab of tabs" class="nav-item" role="presentation">
+                <button class="nav-link" [ngClass]="{ 'active': activeItem == tab.itemName}" [id]="tab.itemName+'-tab'"
+                    data-bs-toggle="tab" [attr.data-bs-target]="'#'+tab.itemName" type="button" role="tab"
+                    (click)="activeItem = tab.itemName">
+                    <span>{{tab.displayName}}</span>
+                    <i class="fa-regular fa-circle-xmark ms-3 text-danger" (click)="onCloseClick(tab)"></i>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div *ngFor="let tab of tabs" class="tab-pane fade" [ngClass]="{ 'show active': activeItem == tab.itemName}"
+                [id]="tab.itemName" role="tabpanel" [attr.aria-labelledby]="tab.itemName+'-tab'">
+                <div class="px-md-3 mx-auto">
+                    <ng-template appComponentLoader>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

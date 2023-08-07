@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-success">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Angular Task Manager</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+                <ng-container>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/about']">About</a>
+                    </li>
+                </ng-container>
+
+                <ng-container
+                    *ngIf="this.loginService.isAuthenticated() && this.loginService.getCurrentUser()?.role == 'Admin'">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/admin', 'dashboard']">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/admin', 'projects']">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/admin', 'masters']">Masters</a>
+                    </li>
+                </ng-container>
+
+                <ng-container
+                    *ngIf="loginService.isAuthenticated() && this.loginService.getCurrentUser()?.role == 'Employee'">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/employee', 'tasks']">Tasks</a>
+                    </li>
+                </ng-container>
+
+                <ng-container *ngIf="loginService.isAuthenticated()">
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            [routerLink]="['/my-profile']">{{loginService.getCurrentUser().userName}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="loginService.logout()" style="cursor: pointer;">Logout</a>
+                    </li>
+                </ng-container>
+
+                <ng-container *ngIf="!loginService.isAuthenticated()">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/login']">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/signup']">Register</a>
+                    </li>
+                </ng-container>
+
+                <!-- Test for Sanitizing XSS -->
+                <!--                 
+                <li class="nav-item">
+                    {{mySanitizedInnerHtml}}
+                </li>
+                <li class="nav-item">
+                    <p [innerHTML]="mySanitizedInnerHtml">Hello</p>
+                </li>
+                <li class="nav-item">
+                    <a href="#" [href]="mySanitizedHref">Hi</a>
+                </li>
+                <li class="nav-item">
+                    <iframe width="100px" height="100px" frameBorder="0" [src]="untrustedURL"></iframe>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <img [src]="mySanitizedHref" alt="Not Found">
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <p [innerHTML]="myUnSanitizedInnerHtml">Hello</p>
+                </li>
+                <li class="nav-item">
+                    <a href="#" [href]="myUnSanitizedHref">Hi</a>
+                </li>
+                <li class="nav-item">
+                    <iframe width="100px" height="100px" frameBorder="0" [src]="trustedURL"></iframe>
+                </li> 
+                -->
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid" [@routeAnimations]="getState(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+</div>

@@ -1,0 +1,242 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb mt-3">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item" aria-current="page">Dashboard</li>
+    </ol>
+</nav>
+
+<h5 class="mb-3">Dashboard</h5>
+<h6>{{ toDay | date: "yyyy/MM/dd HH:mm:ss" }}</h6>
+<div class="row">
+
+    <div class="col-lg-3 pb-3" style="background-color: #e9e6e6">
+
+        <div class="row">
+            <div class="col-11 text-white text-center mx-auto rounded py-2 fw-bold"
+                style="background-color: #a39e9e;font-family: 'Arial Narrow Bold', sans-serif;">
+                {{ designation | uppercase }}
+            </div>
+            <div class="col-12 text-center mt-2">
+                <img src="assets/user.png" width="120px" />
+            </div>
+            <div class="col-12 text-center py-2 fw-bold" style="font-family: Tahoma">
+                {{ username | lowercase }}
+            </div>
+            <div class="col-12 text-center pb-2 text-uppercase" style="font-family: Arial">
+                Team Summary
+            </div>
+            <div class="col-12 mb-3">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase">
+                        Number Of Team Members
+                        <span class="badge rounded-pill bg-secondary" style="font-size: 13px">
+                            {{ numberOfTeamMembers }}
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase">
+                        Total Cost Of All Projects
+                        <span class="badge rounded-pill bg-secondary" style="font-size: 13px">
+                            $ {{ totalCostOfAllProjects }} k
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase">
+                        Pending Tasks
+                        <span class="badge rounded-pill bg-secondary" style="font-size: 13px">
+                            {{ pendingTasks }}
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center text-uppercase">
+                        UpComing Projects
+                        <span class="badge rounded-pill bg-secondary" style="font-size: 13px">
+                            {{ upComingProjects | percent }}
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 text-center pb-2 text-uppercase" style="font-family: 'Arial Narrow'">
+                Clients
+            </div>
+            <div class="col-12">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" *ngFor="let client of clients">
+                        {{ client | slice: 0:10 }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <div class="row">
+            <div class="col-12 pt-0 pb-2" style="background-color: #e9e6e6">
+                <div class="row mt-2">
+                    <div class="col-6 text-start">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Project A
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li *ngFor="let project of projects"><a class="dropdown-item" href="#"
+                                        (click)="onProjectChange($event)" onclick="return false">{{project}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 text-end">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                2020
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li *ngFor="let year of years">
+                                    <a class="dropdown-item" href="#" [ngSwitch]="year">
+                                        <span *ngSwitchCase="2020" ngClass="text-success">{{year}}</span>
+                                        <span *ngSwitchCase="2019" ngClass="text-danger">{{year}}</span>
+                                        <span *ngSwitchCase="2018" ngClass="text-primary">{{year}}</span>
+                                        <span *ngSwitchCase="2017" ngClass="text-warning">{{year}}</span>
+                                        <span *ngSwitchDefault ngClass="text-dark">{{year}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 mx-auto mt-1 text-white text-center py-2 rounded fw-bold text-uppercase"
+                style="background-color: #718d97; font-family: 'Arial Narrow'">
+                Project Briefing
+            </div>
+            <div class="col-12">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <td>Project Cost</td>
+                            <td>{{ projectCost | currency: "USD" }}</td>
+                        </tr>
+                        <tr>
+                            <td>Current Expenditure</td>
+                            <td>{{ currentExpenditure | currency: "USD" }}</td>
+                        </tr>
+                        <tr>
+                            <td>Available Funds</td>
+                            <td>{{ availableFunds | currency: "USD" }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-11 mx-auto mt-1 text-white text-center py-2 rounded fw-bold text-uppercase"
+                style="background-color: #718d97; font-family: 'Arial Narrow'">
+                Team Members Summary
+            </div>
+            <div class="col-12">
+                <table class="table table-borderless ">
+                    <thead>
+                        <tr>
+                            <th>Region</th>
+                            <th>Team Members Count</th>
+                            <th>Temporarily Unavailable Members</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let teamMemberSumary of teamMembersSummary">
+                            <td>
+                                <b>{{ teamMemberSumary.region }}</b>
+                            </td>
+                            <td>
+                                {{ teamMemberSumary.teamMembersCount }}
+                            </td>
+                            <td>
+                                {{ teamMemberSumary.temporarilyUnavailableMembers }}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-lg-3" style="background-color: #e9e6e6">
+        <div class="row">
+            <div class="col-11 mx-auto mt-1 text-white text-center pt-1 pb-2 rounded fw-bold text-uppercase"
+                style="background-color: #718d97; font-family: 'Arial Narrow'">
+                Team Members
+            </div>
+            <div class="col-lg-12 pt-2">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item" *ngFor="let teamMemberGroup of teamMembers ; let i = index">
+                        <div>
+                            <h2 class="accordion-header">
+                                <button class="accordion-button border-0 shadow-none bg-secondary text-white"
+                                    [ngClass]="(i != 0) ? 'collapsed' : ''" type="button" data-bs-toggle="collapse"
+                                    [attr.data-bs-target]="'#collapse' + i"
+                                    [attr.aria-expanded]="(i == 0) ? 'true' : 'false'"
+                                    [attr.aria-controls]="'collapse' + i">
+                                    {{teamMemberGroup.region}}
+                                </button>
+                            </h2>
+                            <div [attr.id]="'collapse' + i" class="accordion-collapse collapse"
+                                [ngClass]="(i == 0) ? 'show' : ''" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div *ngIf="(teamMemberGroup.region == 'North'); then ifBlock else elseBlock"></div>
+                                    <ng-template #ifBlock>
+                                        <div class="card">
+                                            <div class="card-body" *ngFor="let teamMember of teamMemberGroup.members">
+                                                <div>
+                                                    <b>ID: </b>
+                                                    <span>{{teamMember.id}}</span>
+                                                </div>
+                                                <div>
+                                                    <b>Name: </b>
+                                                    <span>{{teamMember.name}}</span>
+                                                </div>
+                                                <div>
+                                                    <b>Status:</b>
+                                                    <span>
+                                                        <i class="fa-solid fa-phone text-success" *ngIf="(teamMember.status == 'Available')"></i>
+                                                        <i class="fa-solid fa-user-xmark text-danger" *ngIf="(teamMember.status == 'Busy')"></i>
+                                                        {{teamMember.status}}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                    <ng-template #elseBlock>
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th>Id</th>
+                                                    <th>Name</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let teamMember of teamMemberGroup.members">
+                                                    <td>
+                                                        {{teamMember.id}}
+                                                    </td>
+                                                    <td>
+                                                        {{teamMember.name}}
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid"
+                                                            [ngClass]="(teamMember.status == 'Available') ? 'fa-phone text-success' : 'fa-user-xmark text-danger'"></i>
+                                                        {{teamMember.status}}
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </ng-template>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

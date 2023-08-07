@@ -1,0 +1,271 @@
+<!-- Heading Starts -->
+<div class="d-flex align-items-center">
+    <h1 class="me-3">Client Locations</h1>
+    <div class="spinner-border text-primary" role="status" *ngIf="showLoading">
+        <span class="visually-hidden"></span>
+    </div>
+</div>
+<!-- Heading Ends -->
+
+<div class="row">
+
+    <!-- Create Box and Search Box Starts -->
+    <div class="form-group row">
+
+        <div class="col-md-12 col-lg-12 col-xl-3 mb-2">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#newClientLocationModal" (click)="onNewClick()">
+                Create Client Location
+            </button>
+        </div>
+
+        <label for="drpSearchBy" class="col-form-label col-md-6 col-lg-2 col-xl-2 text-right">
+            Search by:
+        </label>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 mb-md-2 mb-lg-0">
+            <select class="form-control" id="drpSearchBy" name="SearchBy" [(ngModel)]="searchBy">
+                <option value="clientLocationID">Client Location ID</option>
+                <option value="clientLocationName">Client Location Name</option>
+            </select>
+        </div>
+
+        <label for="textSearchText" class="col-form-label col-md-6 col-lg-2 col-xl-1 text-right">Search:</label>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 mb-2 mb-xl-0">
+            <div class="input-group">
+                <input type="text" class="form-control" id="txtSearchText" name="SearchText" [(ngModel)]="searchText"
+                    (keyup)="onSearchTeaxtKeyup()">
+            </div>
+        </div>
+    </div>
+    <!-- Create Box and Search Box Ends -->
+
+    <!-- Grid Box Starts -->
+    <div class="row">
+        <div class="col-xl-8 col-lg-9 mx-auto">
+            <table class="table table-borderless">
+                <thead class="table-light">
+                    <tr>
+                        <th>
+                            <a href="#" class="text-decoration-none" onclick="return false"
+                                (click)="onChangeSortingOrder('clientLocationID')">
+                                <span class="me-2">#</span>
+                                <i class="fa-solid" *ngIf="sortBy == 'clientLocationID'"
+                                    [ngClass]="(sortOrder == 'ASC') ? 'fa-sort-up' : 'fa-sort-down'"></i>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#" class="text-decoration-none" onclick="return false"
+                                (click)="onChangeSortingOrder('clientLocationName')">
+                                <span class="me-2">Client Location Name</span>
+                                <i class="fa-solid" *ngIf="sortBy == 'clientLocationName'"
+                                    [ngClass]="(sortOrder == 'ASC') ? 'fa-sort-up' : 'fa-sort-down'"></i>
+                            </a>
+                        </th>
+                        <th class="text-center" style="width:200px">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                        *ngFor="let clientLocation of clientLocations | sort : sortBy : sortOrder | filter: searchBy : searchText | paging : currentPageIndex : pageSize; let i = index">
+                        <td>{{clientLocation.clientLocationID}}</td>
+                        <td>{{clientLocation.clientLocationName}}</td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-info text-white me-2" data-bs-toggle="modal"
+                                data-bs-target="#editClientLocationModal"
+                                (click)="onEditClick(clientLocation.clientLocationID)">
+                                Edit
+                            </button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#deleteClientLocationModal"
+                                (click)="onDeleteClick(clientLocation.clientLocationID)">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Grid Box Ends -->
+
+    <!-- Paging Box Starts -->
+    <div class="col-12">
+        <ul class="pagination justify-content-center mt-1">
+            <li class="page-item" (click)="onPreviousPageClick()" [attr.disabled]="currentPageIndex === 0">
+                <a class="page-link bg-secondary text-white" href="#" onclick="return false">Previous</a>
+            </li>
+
+            <ng-container *ngIf="pages.length <= 10">
+                <li class="page-item" *ngFor="let page of pages; let i = index"
+                    [ngClass]="{ 'active': currentPageIndex == i}" (click)="onCurrentPageClick(i)">
+                    <a class="page-link" href="#" onclick="return false">{{i + 1}}</a>
+                </li>
+            </ng-container>
+
+            <ng-container *ngIf="pages.length > 10">
+                <li class="page-item" [ngClass]="{ 'active': currentPageIndex == 0}" (click)="onCurrentPageClick(0)">
+                    <a class="page-link" href="#" onclick="return false">1</a>
+                </li>
+
+                <li class="page-item" [ngClass]="{ 'active': currentPageIndex == 1}" (click)="onCurrentPageClick(1)">
+                    <a class="page-link" href="#" onclick="return false">2</a>
+                </li>
+
+                <li *ngIf="currentPageIndex > 1 && currentPageIndex < pages.length - 2">&nbsp;...&nbsp;</li>
+
+                <li class="page-item" [ngClass]=" 'active' " (click)="onCurrentPageClick(currentPageIndex)"
+                    *ngIf="currentPageIndex > 1 && currentPageIndex < pages.length - 2">
+                    <a class="page-link" href="#" onclick="return false">{{currentPageIndex + 1}}</a>
+                </li>
+
+                <li>&nbsp;...&nbsp;</li>
+
+                <li class="page-item" [ngClass]="{ 'active': currentPageIndex == pages.length - 2}"
+                    (click)="onCurrentPageClick(pages.length - 2)">
+                    <a class="page-link" href="#" onclick="return false">{{pages.length - 1}}</a>
+                </li>
+
+                <li class="page-item" [ngClass]="{ 'active': currentPageIndex == pages.length - 1}"
+                    (click)="onCurrentPageClick(pages.length - 1)">
+                    <a class="page-link" href="#" onclick="return false">{{pages.length}}</a>
+                </li>
+            </ng-container>
+
+            <li class="page-item" (click)="onNextPageClick()" [attr.disabled]="currentPageIndex === (pages.length - 1)">
+                <a class="page-link bg-secondary text-white" href="#" onclick="return false">Next</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Paging Box Ends -->
+
+</div>
+
+
+<!-- New Modal Starts -->
+<div class="modal fade" id="newClientLocationModal" tabindex="-1" aria-labelledby="newClientLocationModalLabel"
+    aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" (shown.bs.modal)="onModalInsertShown()"
+    (hidden.bs.modal)="onModalInsertHidden()">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h1 class="modal-title fs-5" id="newClientLocationModalLabel">New Client Location</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form novalidate="novalidate" [formGroup]="newForm" (ngSubmit)="onSubmitSave()">
+                <div class="modal-body">
+                    <div class="row">
+                        <label for="txtNewClientLocationName" class="col-sm-5 col-form-label">Client Location
+                            Name</label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtNewClientLocationName" class="form-control"
+                                placeholder="Client Location Name" name="clientLocationName"
+                                formControlName="clientLocationName" maxlength="30" #defaultTextBoxNew
+                                [ngClass]="{ 'is-invalid': newForm.get('clientLocationName')?.invalid && (newForm.get('clientLocationName')?.dirty || newForm.get('clientLocationName')?.touched || newForm.submitted),
+                                'is-valid': newForm.get('clientLocationName')?.valid && (newForm.get('clientLocationName')?.dirty || newForm.get('clientLocationName')?.touched || newForm.submitted) }">
+
+                            <div class="text-danger"
+                                *ngIf="newForm.get('clientLocationName')?.invalid && (newForm.get('clientLocationName')?.dirty || newForm.get('clientLocationName')?.touched || newForm.submitted) && newForm.get('clientLocationName')?.errors?.['required']">
+                                Client Location Name can't be blank
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        id="newClientLocationFormCancel">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- New Modal Ends -->
+
+<!-- Edit Modal Starts -->
+<div class="modal fade" id="editClientLocationModal" tabindex="-1" aria-labelledby="editClientLocationModalLabel"
+    aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" (shown.bs.modal)="onModalEditShown()"
+    (hidden.bs.modal)="onModalEditHidden()">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h1 class="modal-title fs-5" id="editClientLocationModal">Edit Client Location</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form novalidate="novalidate" [formGroup]="editForm" (ngSubmit)="onSubmitUpdate()" class="editForm">
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <label for="txtEditClientLocationID" class="col-sm-5 col-form-label">Client Location ID</label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtEditClientLocationID" class="form-control readonlyField"
+                                name="clientLocationID" formControlName="clientLocationID" readonly>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="txtEditClientLocationName" class="col-sm-5 col-form-label">Client Location
+                            Name</label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtEditClientLocationName" class="form-control"
+                                placeholder="Client Location Name" name="clientLocationName"
+                                formControlName="clientLocationName" maxlength="30" #defaultTextBoxEdit
+                                [ngClass]="{ 'is-invalid': editForm.get('clientLocationName')?.invalid && (editForm.get('clientLocationName')?.dirty || editForm.get('clientLocationName')?.touched || editForm.submitted),
+                                'is-valid': editForm.get('clientLocationName')?.valid && (editForm.get('clientLocationName')?.dirty || editForm.get('clientLocationName')?.touched || editForm.submitted) }">
+
+                            <div class="text-danger"
+                                *ngIf="editForm.get('clientLocationName')?.invalid && (editForm.get('clientLocationName')?.dirty || editForm.get('clientLocationName')?.touched || editForm.submitted) && editForm.get('clientLocationName')?.errors?.['required']">
+                                Client Location Name can't be blank
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        id="editClientLocationFormCancel">Close</button>
+                    <button type="submit" class="btn btn-info text-white">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Edit Modal Ends -->
+
+<!-- Delete Modal Starts -->
+<div class="modal fade" id="deleteClientLocationModal" tabindex="-1" aria-labelledby="deleteClientLocationModalLabel"
+    aria-hidden="true" (hidden.bs.modal)="onModalDeleteHidden()">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h1 class="modal-title fs-5" id="deleteClientLocationModalLabel">Delete Client Location</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form [formGroup]="deleteForm" class="deleteForm">
+                <div class="modal-body">
+                    <h5 class="text-danger">Are you sure you want to delete this Client Location?</h5>
+                    <div class="row mb-3">
+                        <label for="txtDeleteClientLocationID" class="col-sm-5 col-form-label">Client Location
+                            ID</label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtDeleteClientLocationID" class="form-control readonlyField"
+                                name="clientLocationID" formControlName="clientLocationID" readonly>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="txtDeleteClientLocationName" class="col-sm-5 col-form-label">Client Location
+                            Name</label>
+                        <div class="col-sm-7">
+                            <input type="text" id="txtDeleteClientLocationName" class="form-control readonlyField"
+                                name="clientLocationName" formControlName="clientLocationName" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        id="deleteClientLocationFormCancel">Close</button>
+                    <button type="button" class="btn btn-danger" (click)="onDeleteConfirmClick()">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Delete Modal Ends -->
